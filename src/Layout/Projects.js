@@ -4,7 +4,7 @@ import { P } from "../components/P";
 
 export const Projects = () => {
   return (
-    <Section id="projects">
+    <Section background="#fff" id="projects">
       <Div>
         <H1>Projects</H1>
         <P>Collections of personal projects</P>

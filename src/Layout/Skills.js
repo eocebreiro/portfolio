@@ -8,7 +8,7 @@ const height = "65px";
 
 export const Skills = () => {
   return (
-    <Section id="skills">
+    <Section background="#edeff1" id="skills">
       <Div>
         <H1>Skills</H1>
         <P>Technologies I've worked with.</P>

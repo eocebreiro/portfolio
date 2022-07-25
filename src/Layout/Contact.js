@@ -4,7 +4,7 @@ import { P } from "../components/P";
 
 export const Contact = () => {
   return (
-    <Section id="contact">
+    <Section background="#edeff1" id="contact">
       <Div>
         <H1>Contact</H1>
         <P>Use the form below or email eocebreiro@gmail.com to contact me.</P>

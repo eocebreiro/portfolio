@@ -7,12 +7,13 @@ export const Div = styled.div`
 `;
 
 export const Section = styled.div`
-  border: 1px solid red;
+  background: ${(props) => props.background};
   min-height: 100vh;
   width: 100%;
   padding-right: 2rem;
   padding-left: 2rem;
   padding-bottom: 2rem;
   padding-top: 100px;
+  border-bottom: 1px solid rgba(0,0,0,0.10)
   }
 `;

@@ -10,7 +10,7 @@ export const Showcase = styled.div`
 `;
 
 export const DarkOverlay = styled.div`
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
   left: 0;

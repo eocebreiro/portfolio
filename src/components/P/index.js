@@ -5,3 +5,7 @@ export const P = styled.p`
   padding-bottom: 10px;
   }
 `;
+export const Logo = styled.p`
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+`;

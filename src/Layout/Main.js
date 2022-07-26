@@ -23,8 +23,8 @@ export const Main = () => {
             </P>
           </Div>
           <Div>
-            <Button link="#contact">Download Resume</Button>
-            <Button link="#contact">Contact Me</Button>
+            <Button to="#contact">Download Resume</Button>
+            <Button to="#contact">Contact Me</Button>
           </Div>
         </Section>
       </DarkOverlay>

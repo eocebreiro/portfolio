@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { GlobalStyle } from "./components/Globalstyles";
-import { Nav } from "./Layout/Nav";
+import { Navbar } from "./Layout/Navbar";
 import { Main } from "./Layout/Main";
 import { Skills } from "./Layout/Skills";
 import { Projects } from "./Layout/Projects";
@@ -12,7 +12,7 @@ const App = () => {
   return (
     <Router>
       <GlobalStyle />
-      <Nav />
+      <Navbar />
       <Main />
       <Skills />
       <Projects />

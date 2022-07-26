@@ -7,12 +7,12 @@ export const buttonStyles = css`
   width: auto;
   cursor: pointer;
   margin-right: 0.5rem;
-  transition: opacity 0.2s ease-in;
+  transition: all 0.3s ease;
   outline: none;
   color: white;
   border: 2px solid white;
   background: none;
-  text-decoration: none;
+  text-decoration: transparent;
   &:hover {
     background: #00b85b;
     border: 2px solid #00b85b;

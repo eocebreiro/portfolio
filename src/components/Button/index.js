@@ -8,11 +8,11 @@ import { StyledButton } from "./StyledButton";
 export const Button = (props) => {
   // Render an anchor tag (Link)
   let button = (
-    <StyledLink to={props.link}>{Children.toArray(props.children)}</StyledLink>
+    <StyledLink to={props.to}>{Children.toArray(props.children)}</StyledLink>
   );
-  if (props.link[0] === "#") {
+  if (props.to[0] === "#") {
     button = (
-      <StyledHashLink to={props.link} smooth>
+      <StyledHashLink to={props.to} smooth>
         {Children.toArray(props.children)}
       </StyledHashLink>
     );

@@ -1,9 +1,11 @@
+import { hover } from "@testing-library/user-event/dist/hover";
 import React from "react";
 
 import CssIcon from "./svg/css";
 import FriebaseIcon from "./svg/firebase";
 import GitIcon from "./svg/git";
 import GithubIcon from "./svg/github";
+import GithubIcon2 from "./svg/github2";
 import GoogleCloudIcon from "./svg/googlecloud";
 import HerokuIcon from "./svg/heroku";
 import HtmlIcon from "./svg/html";
@@ -27,6 +29,8 @@ const getIcon = (name) => {
       return <GitIcon />;
     case "github":
       return <GithubIcon />;
+    case "github2":
+      return <GithubIcon2 />;
     case "googlecloud":
       return <GoogleCloudIcon />;
     case "heroku":

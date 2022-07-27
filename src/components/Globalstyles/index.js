@@ -13,6 +13,8 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.6;
     background-color: #fff;
     color: #333;
+    letter-spacing: .5px;
+
   }
 
   div {

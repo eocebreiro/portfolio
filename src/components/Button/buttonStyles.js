@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+import { handleColorType, handleDesktopSizeType } from "../utils/handleTypes";
 
 export const buttonStyles = css`
   display: inline-block;
@@ -13,8 +14,9 @@ export const buttonStyles = css`
   border: 2px solid white;
   background: none;
   text-decoration: transparent;
+  font-size: ${(props) => handleDesktopSizeType(props.size)};
   &:hover {
-    background: #00b85b;
-    border: 2px solid #00b85b;
+    background: ${(props) => handleColorType(props.color)};
+    border: 2px solid ${(props) => handleColorType(props.color)};
   }
 `;

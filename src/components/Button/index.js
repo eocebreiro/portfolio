@@ -12,7 +12,7 @@ export const Button = (props) => {
   );
   if (props.to[0] === "#") {
     button = (
-      <StyledHashLink to={props.to} smooth>
+      <StyledHashLink to={props.to} color={props.color} smooth>
         {Children.toArray(props.children)}
       </StyledHashLink>
     );
@@ -20,7 +20,7 @@ export const Button = (props) => {
   // If the Button has a handleRoute prop, we want to render a button
   if (props.handleRoute) {
     button = (
-      <StyledButton onClick={props.handleRoute}>
+      <StyledButton onClick={props.handleRoute} color={props.color}>
         {Children.toArray(props.children)}
       </StyledButton>
     );

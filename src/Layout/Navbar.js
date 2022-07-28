@@ -1,3 +1,4 @@
+import React from "react";
 //Styled
 import { Link } from "../components/Link";
 import { Nav } from "../components/Nav";
@@ -6,9 +7,8 @@ import { Logo } from "../components/P";
 import { Span } from "../components/Span";
 
 import Icon from "../components/Icons";
-import { hover } from "@testing-library/user-event/dist/hover";
 
-export const Navbar = () => {
+export const Navbar = ({ active }) => {
   //blue: #1363DF
   //green: #00b85b
   return (
@@ -22,21 +22,25 @@ export const Navbar = () => {
         </Link>
       </CenterDiv>
       <CenterDiv style={{ flex: "2 1 0" }}>
-        <Link to="#main" color="primary" size="S" smooth>
+        <Link to="#main" color="primary" size="S" active={active} smooth>
           Home
         </Link>
-        <Link to="#skills" color="primary" size="S" smooth>
+        <Link to="#skills" color="primary" size="S" active={active} smooth>
           Skills
         </Link>
-        <Link to="#projects" color="primary" size="S" smooth>
+        <Link to="#projects" color="primary" size="S" active={active} smooth>
           Projects
         </Link>
-        <Link to="#contact" color="primary" size="S" smooth>
+        <Link to="#contact" color="primary" size="S" active={active} smooth>
           Contact
         </Link>
       </CenterDiv>
       <CenterDiv style={{ flex: "1 1 0" }}>
-        <a href="https://github.com/eocebreiro" target="_blank">
+        <a
+          href="https://github.com/eocebreiro"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Icon name="github2" height="40px"></Icon>
         </a>
       </CenterDiv>

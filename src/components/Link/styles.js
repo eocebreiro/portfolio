@@ -26,9 +26,14 @@ export const StyledHashLink = styled(HashLink)`
   ${(props) =>
     props.type !== "plain" &&
     css`
-    color: white;
-  transition: all .1s ease;
-  &:hover {
-    color: ${(props) => handleColorType(props.color)};
-    border-bottom: 1.5px solid white;`}
+      color: ${(props) =>
+        props.active ? handleColorType(props.color) : "white"};
+      border-bottom: ${(props) => props.active && "1.5px solid white"};
+      transition: all 0.1s ease;
+
+      &:hover {
+        color: ${(props) => handleColorType(props.color)};
+        border-bottom: 1.5px solid white;
+      }
+    `}
 `;

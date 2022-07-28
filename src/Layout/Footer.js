@@ -13,7 +13,7 @@ export const Footer = () => {
       }}
     >
       <div>
-        <p style={{ "text-align": "center" }}>
+        <p style={{ textAlign: "center" }}>
           <small> Copyright &copy; 2022</small>
         </p>
       </div>

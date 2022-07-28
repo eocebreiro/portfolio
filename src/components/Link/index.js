@@ -20,6 +20,7 @@ export const Link = (props) => {
         type={props.type}
         color={props.color}
         size={props.size}
+        active={props.active}
         smooth
       >
         {Children.toArray(props.children)}

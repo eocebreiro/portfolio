@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     background-color: #fff;
     color: #333;
     letter-spacing: .5px;
+    height: 100%;
 
   }
 

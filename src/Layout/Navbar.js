@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "../components/Link";
 import { Nav } from "../components/Nav";
 import { CenterDiv } from "../components/Div";
-import { Logo } from "../components/P";
+import { Logo } from "../components/Logo";
 import { Span } from "../components/Span";
 
 import Icon from "../components/Icons";
@@ -13,12 +13,9 @@ export const Navbar = ({ active }) => {
   //green: #00b85b
   return (
     <Nav>
-      <CenterDiv style={{ flex: "1 1 0" }}>
+      <CenterDiv style={{ flex: "1 1 0", justifyContent: "left" }}>
         <Link to="#main" type="plain">
-          <Logo>
-            <Span color="primary">Eric C</Span>
-            <Span>ebreiro</Span>
-          </Logo>
+          <Logo />
         </Link>
       </CenterDiv>
       <CenterDiv style={{ flex: "2 1 0" }}>
@@ -35,7 +32,7 @@ export const Navbar = ({ active }) => {
           Contact
         </Link>
       </CenterDiv>
-      <CenterDiv style={{ flex: "1 1 0" }}>
+      <CenterDiv style={{ flex: "1 1 0", justifyContent: "right" }}>
         <a
           href="https://github.com/eocebreiro"
           target="_blank"

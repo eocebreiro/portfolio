@@ -8,19 +8,34 @@ import { StyledButton } from "./StyledButton";
 export const Button = (props) => {
   // Render an anchor tag (Link)
   let button = (
-    <StyledLink to={props.to}>{Children.toArray(props.children)}</StyledLink>
+    <StyledLink to={props.to} onClick={props.onClick} width={props.width}>
+      {Children.toArray(props.children)}
+    </StyledLink>
   );
-  if (props.to[0] === "#") {
-    button = (
-      <StyledHashLink to={props.to} color={props.color} smooth>
-        {Children.toArray(props.children)}
-      </StyledHashLink>
-    );
+
+  // Render a hash link
+  if (props.to) {
+    if (props.to[0] === "#") {
+      button = (
+        <StyledHashLink
+          to={props.to}
+          type={props.type}
+          width={props.width}
+          smooth
+        >
+          {Children.toArray(props.children)}
+        </StyledHashLink>
+      );
+    }
   }
   // If the Button has a handleRoute prop, we want to render a button
-  if (props.handleRoute) {
+  if (props.onClick) {
     button = (
-      <StyledButton onClick={props.handleRoute} color={props.color}>
+      <StyledButton
+        onClick={props.onClick}
+        type={props.type}
+        width={props.width}
+      >
         {Children.toArray(props.children)}
       </StyledButton>
     );

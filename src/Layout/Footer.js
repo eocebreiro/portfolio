@@ -2,7 +2,7 @@ export const Footer = () => {
   return (
     <footer
       style={{
-        height: "50px",
+        height: "20px",
         width: "100%",
         bottom: "0px",
         display: "flex",

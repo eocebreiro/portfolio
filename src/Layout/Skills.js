@@ -1,19 +1,33 @@
-import { Div, Section } from "../components/Div";
+import {
+  Div,
+  Section,
+  ContentWrapper,
+  RowDiv,
+  ColDiv,
+} from "../components/Div";
 import { H1 } from "../components/H1";
 import { P } from "../components/P";
 
 import Icon from "../components/Icons";
 
-const height = "65px";
+const height = "100px";
 
 export const Skills = () => {
   return (
     <Section background="#edeff1" id="skills">
-      <Div>
-        <H1>Skills</H1>
-        <P>Technologies I've worked with.</P>
-      </Div>
-      <Div style={{ display: "flex" }}>
+      <ContentWrapper>
+        <H1 size="L">Skills</H1>
+        <P size="N">
+          Technologies I've worked with. Technologies I've worked with.
+          Technologies I've worked with. Technologies I've worked with.
+          Technologies I've worked with. Technologies I've worked with.
+          Technologies I've worked with. Technologies I've worked with.
+          Technologies I've worked with. Technologies I've worked with.
+          Technologies I've worked with. Technologies I've worked with.
+          Technologies I've worked with. Technologies I've worked with.
+          Technologies I've worked with. Technologies I've worked with.
+          Technologies I've worked with. Technologies I've worked with.
+        </P>
         <Icon name="react" height={height}></Icon>
         <Icon name="redux" height={height}></Icon>
         <Icon name="javascript" height={height}></Icon>
@@ -28,7 +42,7 @@ export const Skills = () => {
         <Icon name="googlecloud" height={height}></Icon>
         <Icon name="firebase" height={height}></Icon>
         <Icon name="selenium" height={height}></Icon>
-      </Div>
+      </ContentWrapper>
     </Section>
   );
 };

@@ -11,8 +11,8 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    background-color: #fff;
-    color: #333;
+    background: #1a1a1a;
+    color: #fff;
     letter-spacing: .5px;
     height: 100%;
 

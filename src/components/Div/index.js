@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import { device } from "../utils/device";
 
 export const Section = styled.div`
-  background: ${(props) => props.background};
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -9,15 +9,45 @@ export const Section = styled.div`
   padding-right: 4rem;
   padding-left: 4rem;
   padding-bottom: 2rem;
-  padding-top: 100px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  @media ${device.laptop} {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  @media ${device.tablet} {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  @media ${device.mobileL} {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  @media ${device.mobile} {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 `;
 
 export const ContentWrapper = styled.div`
   width: 100%;
+  padding-top: 100px;
   max-width: 1100px;
   margin: 0 auto;
   flex-grow: 1;
+  border: 1px solid red;
+
+  @media ${device.laptop} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.mobileL} {
+    padding-top: 70px;
+  }
+  @media ${device.mobile} {
+    padding-top: 70px;
+  }
 `;
 
 export const Title = styled.div`
@@ -29,14 +59,13 @@ export const Title = styled.div`
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
-  border: 1px solid orange;
   flex-grow: 1;
   height: 100%;
 `;
 
 export const Col = styled.div`
   padding-bottom: 10px;
-  flex-grow: 1;
+  padding-top: 10px;
 `;
 
 //Used in Main to have things align to the left
@@ -74,7 +103,6 @@ export const FormOverlay = styled.div`
 `;
 
 export const FormDiv = styled.div`
-  border: 1px solid yellow;
   grid-area: 1 / 1 / 2 / 2;
   display: ${(props) => !props.active && "none"};
 `;

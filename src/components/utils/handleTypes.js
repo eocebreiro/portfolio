@@ -19,6 +19,8 @@ export const handleColorType = (color) => {
 export const handleDesktopSizeType = (size) => {
   //Desktop
   switch (size) {
+    case "title":
+      return "2.5rem";
     case "XL":
       return "3rem";
     case "L":
@@ -40,10 +42,10 @@ export const handleDesktopSizeType = (size) => {
 export const handleButtonType = (type) => {
   switch (type) {
     case "main-page":
-      return "background: none; color: white; border: 2px solid white; &:hover {background: #00b85b; border: 2px solid #00b85b;}";
+      return "background: none; color: #00b85b; border: 2px solid #00b85b; &:hover {color: white; background: #00b85b; border: 2px solid #00b85b;}";
     case "submit":
-      return "background: #00b85b; color: white; border: 2px solid #00b85b; &:hover {background: black; border: 2px solid black;}";
+      return "background: none; color: #00b85b; border: 2px solid #00b85b; &:hover {color: white; background: #00b85b; border: 2px solid #00b85b;}";
     default:
-      return "color: white; border: 2px solid white; &:hover {background: #00b85b; border: 2px solid #00b85b;}";
+      return "background: none; color: #00b85b; border: 2px solid #00b85b; &:hover {color: white; background: #00b85b; border: 2px solid #00b85b;}";
   }
 };

@@ -22,8 +22,8 @@ export const Navbar = ({ active }) => {
         <Link to="#main" color="primary" size="S" active={active} smooth>
           Home
         </Link>
-        <Link to="#skills" color="primary" size="S" active={active} smooth>
-          Skills
+        <Link to="#about" color="primary" size="S" active={active} smooth>
+          About
         </Link>
         <Link to="#projects" color="primary" size="S" active={active} smooth>
           Projects

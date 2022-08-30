@@ -12,21 +12,15 @@ import Icon from "../components/Icons";
 
 const height = "100px";
 
-export const Skills = () => {
+export const About = () => {
   return (
-    <Section background="#edeff1" id="skills">
+    <Section background="#edeff1" id="about">
       <ContentWrapper>
-        <H1 size="L">Skills</H1>
+        <H1 size="L">About</H1>
         <P size="N">
-          Technologies I've worked with. Technologies I've worked with.
-          Technologies I've worked with. Technologies I've worked with.
-          Technologies I've worked with. Technologies I've worked with.
-          Technologies I've worked with. Technologies I've worked with.
-          Technologies I've worked with. Technologies I've worked with.
-          Technologies I've worked with. Technologies I've worked with.
-          Technologies I've worked with. Technologies I've worked with.
-          Technologies I've worked with. Technologies I've worked with.
-          Technologies I've worked with. Technologies I've worked with.
+          I'm full-stack web developer who values learning and growing with
+          people, teams, and technologies. My goal is to create engaging
+          experiences for users, with a fine balance of technology and design.
         </P>
         <Icon name="react" height={height}></Icon>
         <Icon name="redux" height={height}></Icon>

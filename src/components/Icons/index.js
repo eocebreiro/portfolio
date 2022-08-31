@@ -1,4 +1,3 @@
-import { hover } from "@testing-library/user-event/dist/hover";
 import React from "react";
 
 import CssIcon from "./svg/css";
@@ -65,7 +64,7 @@ const getIcon = (name) => {
 
 const Icons = ({ name, height = "100px" }) => (
   <div
-    style={{ height: height, margin: "10px", width: "auto" }}
+    style={{ height: height, margin: "0 10px", width: "auto" }}
     id={`${tidy(name)}-logo-icon`}
   >
     {getIcon(tidy(name))}

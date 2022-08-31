@@ -10,6 +10,7 @@ import {
   MenuItem,
   MenuIcon,
   MenuLink,
+  NavbarIcons,
 } from "../components/Nav";
 import Icon from "../components/Icons";
 
@@ -73,7 +74,7 @@ export const Navbar = ({ active }) => {
         </MenuIcon>
       </Menu>
 
-      <Menu>
+      <NavbarIcons>
         <a
           href="https://github.com/eocebreiro"
           target="_blank"
@@ -88,7 +89,7 @@ export const Navbar = ({ active }) => {
         >
           <Icon name="navlinkedin" height="30px"></Icon>
         </a>
-      </Menu>
+      </NavbarIcons>
     </Nav>
   );
 };

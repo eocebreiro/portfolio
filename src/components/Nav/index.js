@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { HashLink } from "react-router-hash-link";
 import { handleColorType, handleDesktopSizeType } from "../utils/handleTypes";
+import { device } from "../utils/device";
 
 export const Nav = styled.nav`
   display: flex;
@@ -31,7 +32,7 @@ export const Logo = styled(HashLink)`
 
 export const HamburgerContainer = styled.div`
   display: none;
-  @media (max-width: 768px) {
+  @media ${device.tablet} {
     display: flex;
   }
 `;
@@ -42,7 +43,7 @@ export const Menu = styled.ul`
   align-items: center;
   position: relative;
 
-  @media (max-width: 768px) {
+  @media ${device.tablet} {
     position: absolute;
     top: 0;
     left: 0;
@@ -66,7 +67,7 @@ export const Menu = styled.ul`
 export const MenuItem = styled.li`
   list-style: none;
   padding: 0.25rem 2rem;
-  @media (max-width: 768px) {
+  @media ${device.tablet} {
     height: 50px;
     display: flex;
     justify-content: center;
@@ -90,8 +91,14 @@ export const MenuLink = styled(HashLink)`
 
 export const MenuIcon = styled(MenuItem)`
   display: none;
-
-  @media (max-width: 768px) {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  @media ${device.tablet} {
     display: flex;
   }
+`;
+
+export const NavbarIcons = styled(Menu)`
+  gap: 20px;
 `;

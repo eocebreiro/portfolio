@@ -5,7 +5,7 @@ import CssIcon from "./svg/css";
 import FriebaseIcon from "./svg/firebase";
 import GitIcon from "./svg/git";
 import GithubIcon from "./svg/github";
-import GithubIcon2 from "./svg/github2";
+import GithubIcon2 from "./svg/github2"; //delete
 import GoogleCloudIcon from "./svg/googlecloud";
 import HerokuIcon from "./svg/heroku";
 import HtmlIcon from "./svg/html";
@@ -16,6 +16,8 @@ import PythonIcon from "./svg/python";
 import ReactIcon from "./svg/react.js";
 import ReduxIcon from "./svg/redux";
 import SeleniumIcon from "./svg/selenium";
+import NavGithubIcon from "./svg/navgithub";
+import NavLinkedinIcon from "./svg/navlinkedin";
 
 const tidy = (string) => string.toLowerCase().trim();
 
@@ -51,6 +53,10 @@ const getIcon = (name) => {
       return <ReduxIcon />;
     case "selenium":
       return <SeleniumIcon />;
+    case "navlinkedin":
+      return <NavLinkedinIcon />;
+    case "navgithub":
+      return <NavGithubIcon />;
 
     default:
       return "";

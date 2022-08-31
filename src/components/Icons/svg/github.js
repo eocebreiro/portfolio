@@ -2,7 +2,7 @@ import React from "react";
 
 const Icon = () => (
   <svg viewBox="0 0 128 128">
-    <g fill="#181616">
+    <g fill="#fff">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

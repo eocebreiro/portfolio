@@ -15,7 +15,16 @@ export const GlobalStyle = createGlobalStyle`
     color: #fff;
     letter-spacing: .5px;
     height: 100%;
+    animation: fadeInAnimation ease-out 2s;
 
+   @keyframes fadeInAnimation {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity 1;
+    }
+  }
   }
 
   div {

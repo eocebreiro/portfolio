@@ -12,6 +12,7 @@ export const Section = styled.div`
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   align-items: center;
   justify-content: center;
+
   @media ${device.laptop} {
     padding-right: 2rem;
     padding-left: 2rem;
@@ -66,6 +67,7 @@ export const Row = styled.div`
 export const Col = styled.div`
   padding-bottom: 10px;
   padding-top: 10px;
+  overflow: visible;
 `;
 
 //Used in Main to have things align to the left

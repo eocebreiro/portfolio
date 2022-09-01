@@ -20,7 +20,7 @@ export const Navbar = ({ active }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Nav>
-      <Logo to="#main" size="logo">
+      <Logo to="#main">
         <span>{"Eric C"}</span>
         {"ebreiro"}
       </Logo>

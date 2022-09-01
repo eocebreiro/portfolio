@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { HashLink } from "react-router-hash-link";
-import { handleColorType, handleDesktopSizeType } from "../utils/handleTypes";
+import { handleColorType } from "../utils/handleTypes";
 import { device } from "../utils/device";
 
 export const Nav = styled.nav`
@@ -21,12 +21,15 @@ export const Nav = styled.nav`
 
 export const Logo = styled(HashLink)`
   text-decoration: none;
-  font-size: ${(props) => handleDesktopSizeType(props.size)};
+  font-size: 1.75rem;
   color: white;
   letter-spacing: 3.5px;
 
   span {
     color: ${handleColorType("primary")};
+  }
+  @media ${device.laptop} {
+    font-size: 1.5rem;
   }
 `;
 
@@ -67,6 +70,9 @@ export const Menu = styled.ul`
 export const MenuItem = styled.li`
   list-style: none;
   padding: 0.25rem 2rem;
+  @media ${device.laptop} {
+    padding: 0.25rem 1rem;
+  }
   @media ${device.tablet} {
     height: 50px;
     display: flex;

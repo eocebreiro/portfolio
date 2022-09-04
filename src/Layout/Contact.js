@@ -231,7 +231,12 @@ export const Contact = () => {
                   onClick={(e) => onSubmit(e)}
                   display="none"
                 />
-                <Button type="submit" onClick={(e) => onSubmit(e)} width="100%">
+                <Button
+                  type="submit"
+                  onClick={(e) => onSubmit(e)}
+                  width="40%"
+                  color="primary"
+                >
                   Submit
                 </Button>
               </FormDiv>
@@ -241,7 +246,11 @@ export const Contact = () => {
                 ) : isSuccess ? (
                   <Fragment>
                     <P style={{ fontWeight: "700" }}>Email sent sucessfully!</P>
-                    <Button type="submit" onClick={(e) => resetForm(e)}>
+                    <Button
+                      type="submit"
+                      onClick={(e) => resetForm(e)}
+                      color="primary"
+                    >
                       Send Another Email
                     </Button>
                   </Fragment>

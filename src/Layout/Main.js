@@ -26,7 +26,7 @@ export const Main = () => {
           // </Button>
         }
         <SlideUp>
-          <Button to="#about" type="main-page">
+          <Button to="#about" color="primary">
             Learn More
           </Button>
         </SlideUp>

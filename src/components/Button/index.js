@@ -8,7 +8,12 @@ import { StyledButton } from "./StyledButton";
 export const Button = (props) => {
   // Render an anchor tag (Link)
   let button = (
-    <StyledLink to={props.to} onClick={props.onClick} width={props.width}>
+    <StyledLink
+      to={props.to}
+      onClick={props.onClick}
+      width={props.width}
+      color={props.color}
+    >
       {Children.toArray(props.children)}
     </StyledLink>
   );
@@ -21,6 +26,7 @@ export const Button = (props) => {
           to={props.to}
           type={props.type}
           width={props.width}
+          color={props.color}
           smooth
         >
           {Children.toArray(props.children)}
@@ -35,6 +41,7 @@ export const Button = (props) => {
         onClick={props.onClick}
         type={props.type}
         width={props.width}
+        color={props.color}
       >
         {Children.toArray(props.children)}
       </StyledButton>

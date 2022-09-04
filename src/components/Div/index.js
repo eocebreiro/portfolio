@@ -4,12 +4,10 @@ import { device } from "../utils/device";
 export const Section = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   width: 100%;
   padding-right: 4rem;
   padding-left: 4rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   align-items: center;
   justify-content: center;
 
@@ -30,14 +28,16 @@ export const Section = styled.div`
     padding-left: 1rem;
   }
 `;
+export const LandingSection = styled(Section)`
+  min-height: 100vh;
+`;
 
 export const ContentWrapper = styled.div`
   width: 100%;
-  padding-top: 100px;
+  padding-top: 50px;
   max-width: 1100px;
   margin: 0 auto;
   flex-grow: 1;
-  border: 1px solid red;
 
   @media ${device.laptop} {
   }

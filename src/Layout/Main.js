@@ -1,14 +1,14 @@
 import React from "react";
 
 // Components
-import { Section, Col } from "../components/Div";
+import { LandingSection, Col } from "../components/Div";
 import { PTitle, Span } from "../components/P";
 import { Button } from "../components/Button";
 import { SlideRight, SlideLeft, SlideUp } from "../components/Animations";
 
 export const Main = () => {
   return (
-    <Section id="main">
+    <LandingSection id="main">
       <SlideRight>
         <PTitle size="title">
           <Span>Hello, I'm </Span>
@@ -31,6 +31,6 @@ export const Main = () => {
           </Button>
         </SlideUp>
       </Col>
-    </Section>
+    </LandingSection>
   );
 };

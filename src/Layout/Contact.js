@@ -13,14 +13,12 @@ import {
   CenterDiv,
 } from "../components/Div";
 import { H1 } from "../components/H1";
-import { Span } from "../components/Span";
-import { P } from "../components/P";
+import { PCenter, Span } from "../components/P";
 import { Button } from "../components/Button";
 import { Input } from "../components/FormItems/Input";
 import { TextArea } from "../components/FormItems/Input";
 import { FormGroup } from "../components/FormItems/FormGroup";
 import { Form } from "../components/FormItems/Form";
-import { Error } from "../components/FormItems/Error";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
@@ -64,7 +62,19 @@ export const Contact = () => {
 
   const resetForm = (e) => {
     setLoading({ ...loading, isLoading: true, isSuccess: null });
-    setFormData({ ...formData, isFormActive: true, isOverlayActive: false });
+    setFormData({
+      ...formData,
+      isFormActive: true,
+      isOverlayActive: false,
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+      isErrName: false,
+      isErrEmail: false,
+      isErrPhone: false,
+      isErrMessage: false,
+    });
   };
 
   const onSubmit = async (e) => {
@@ -153,19 +163,17 @@ export const Contact = () => {
   };
   return (
     <Section background="#edeff1" id="contact">
-      <ContentWrapper>
+      <ContentWrapper style={{ height: "650px" }}>
         <Col>
           <Title>
             <H1 size="L">Contact</H1>
-            <P>
-              <Span size="N">
-                Use the form below or email{" "}
-                <Span color="primary" style={{ fontWeight: "700" }}>
-                  eocebreiro@gmail.com
-                </Span>{" "}
-                to contact me.
-              </Span>
-            </P>
+            <PCenter>
+              Use the form below or email{" "}
+              <Span color="primary" style={{ fontWeight: "700" }}>
+                eocebreiro@gmail.com
+              </Span>{" "}
+              to contact me.
+            </PCenter>
           </Title>
 
           <Form>
@@ -183,7 +191,6 @@ export const Contact = () => {
                     NoValidate
                     error={isErrName}
                   />
-                  <Error error={isErrName}>*Name is required</Error>
                 </FormGroup>
                 <FormGroup>
                   <Input
@@ -197,7 +204,6 @@ export const Contact = () => {
                     NoValidate
                     error={isErrEmail}
                   />
-                  <Error error={isErrEmail}>*Email is invalid</Error>
                 </FormGroup>
                 <FormGroup>
                   <Input
@@ -210,7 +216,6 @@ export const Contact = () => {
                     NoValidate
                     error={isErrPhone}
                   />
-                  <Error error={isErrPhone}>*Phone number is invalid</Error>
                 </FormGroup>
                 <FormGroup>
                   <TextArea
@@ -222,9 +227,8 @@ export const Contact = () => {
                     autoComplete="off"
                     NoValidate
                     error={isErrMessage}
-                    rows="6"
+                    rows="7"
                   />
-                  <Error error={isErrMessage}>*Message must not be blank</Error>
                 </FormGroup>
                 <Input
                   type="submit"
@@ -234,10 +238,10 @@ export const Contact = () => {
                 <Button
                   type="submit"
                   onClick={(e) => onSubmit(e)}
-                  width="40%"
+                  width="100%"
                   color="primary"
                 >
-                  Submit
+                  Send Message!
                 </Button>
               </FormDiv>
               <FormOverlay active={isOverlayActive}>
@@ -245,7 +249,9 @@ export const Contact = () => {
                   <FontAwesomeIcon icon={faSpinner} pulse size="6x" />
                 ) : isSuccess ? (
                   <Fragment>
-                    <P style={{ fontWeight: "700" }}>Email sent sucessfully!</P>
+                    <PCenter style={{ fontWeight: "700" }}>
+                      Email sent sucessfully!
+                    </PCenter>
                     <Button
                       type="submit"
                       onClick={(e) => resetForm(e)}
@@ -256,9 +262,9 @@ export const Contact = () => {
                   </Fragment>
                 ) : (
                   <Fragment>
-                    <P style={{ fontWeight: "700" }}>
+                    <PCenter style={{ fontWeight: "700" }}>
                       Opps, something went wrong.
-                    </P>
+                    </PCenter>
                     <Button type="submit" onClick={(e) => resetForm(e)}>
                       Try Again
                     </Button>

@@ -11,7 +11,7 @@ export const buttonStyles = css`
   margin-right: 0.5rem;
   transition: all 0.3s ease;
   outline: none;
-
+  letter-spacing: 3px;
   text-decoration: transparent;
   background: none;
   color: ${(props) => (props.color ? handleColorType(props.color) : "black")};

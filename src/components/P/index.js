@@ -1,10 +1,28 @@
 import styled from "styled-components";
-import { handleColorType, handleDesktopSizeType } from "../utils/handleTypes";
+import { handleColorType } from "../utils/handleTypes";
 import { device } from "../utils/device";
 
 export const P = styled.p`
-    font-size: ${(props) => handleDesktopSizeType(props.size)};
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  padding-bottom: 1rem;
+  @media ${device.laptop} {
+    font-size: 1.2rem;
   }
+  @media ${device.tablet} {
+    font-size: 1rem;
+  }
+  @media ${device.mobileL} {
+    font-size: 1rem;
+  }
+  @media ${device.mobile} {
+    font-size: 1rem;
+  }
+`;
+
+export const PCenter = styled(P)`
+  text-align: center;
 `;
 
 export const PTitle = styled.p`

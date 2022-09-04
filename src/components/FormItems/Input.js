@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { handleColorType } from "../utils/handleTypes";
 
 export const Input = styled.input`
   p {
@@ -7,26 +8,31 @@ export const Input = styled.input`
     background: #dc3545;
     text: #fff;
   }
-  &:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: #80bdff;
-    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
-  }
+
   padding: 0.5rem 1rem;
-  font-size: 1.15rem;
-  border-radius: 0.3rem;
+  height: 50px;
+  font-size: 1rem;
   display: block;
   width: 100%;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
+  color: #fff;
+  background-color: #2b2b2b;
   display: ${(props) => props.display && "none"};
-  outline-color: ${(props) => (props.error ? "#dc3545" : "none")};
-  border: 1px solid ${(props) => (props.error ? "#dc3545" : "#9b9fa3")};
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: none;
   margin: 0;
   overflow: visible;
+  outline: none;
+  &:-webkit-autofill {
+    transition-delay: 9999s;
+  }
+
+  ${(props) =>
+    props.error
+      ? "background: linear-gradient(#dc3545, #dc3545) bottom / 0% 3px no-repeat #2b2b2b; background-size: 100% 3px; transition: background-size 1s;"
+      : `background: linear-gradient(to right, ${handleColorType(
+          "primary"
+        )}, ${handleColorType(
+          "primary"
+        )}) bottom left / 0% 3px  no-repeat #2b2b2b; transition: all .3s ease; &:focus {background-size: 100% 3px;}`}
 `;
 
 export const TextArea = styled.textarea`
@@ -35,23 +41,25 @@ export const TextArea = styled.textarea`
   resize: none;
   font-family: inherit;
   padding: 0.5rem 1rem;
-  font-size: 1.15rem;
-  border-radius: 0.3rem;
+  font-size: 1rem;
   display: block;
   width: 100%;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  display: ${(props) => props.display && "none"};
-  outline-color: ${(props) => (props.error ? "#dc3545" : "none")};
-  border: 1px solid ${(props) => (props.error ? "#dc3545" : "#9b9fa3")};
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  background-color: #2b2b2b;
+  border: none;
   margin: 0;
-
-  &:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: #80bdff;
-    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+  outline: none;
+  margin-bottom: 20px;
+  &:-webkit-autofill {
+    transition-delay: 9999s;
   }
+
+  ${(props) =>
+    props.error
+      ? "background: linear-gradient(#dc3545, #dc3545) bottom / 0% 3px no-repeat #2b2b2b; background-size: 100% 3px; transition: background-size 1s;"
+      : `background: linear-gradient(to right, ${handleColorType(
+          "primary"
+        )}, ${handleColorType(
+          "primary"
+        )}) bottom left / 0% 3px  no-repeat #2b2b2b; transition: all .3s ease; &:focus {background-size: 100% 3px;}`}
 `;

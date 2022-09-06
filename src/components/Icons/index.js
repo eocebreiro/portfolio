@@ -62,8 +62,8 @@ const getIcon = (name) => {
   }
 };
 
-const Icons = ({ name, height = "100px" }) => (
-  <div style={{ height: height, width: "auto" }} id={`${tidy(name)}-logo-icon`}>
+const Icons = ({ name, height = "100px", width = "100px" }) => (
+  <div style={{ height: height, width: width }} id={`${tidy(name)}-logo-icon`}>
     {getIcon(tidy(name))}
   </div>
 );

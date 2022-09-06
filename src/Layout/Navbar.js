@@ -6,11 +6,11 @@ import {
   Nav,
   Logo,
   HamburgerContainer,
-  Menu,
-  MenuItem,
-  MenuIcon,
+  CenterMenu,
+  CenterItem,
   MenuLink,
-  NavbarIcons,
+  RightMenu,
+  RightItem,
 } from "../components/Nav";
 import Icon from "../components/Icons";
 
@@ -35,61 +35,61 @@ export const Navbar = ({ active }) => {
           color="#fff"
         />
       </HamburgerContainer>
-      <Menu isOpen={isOpen} onClick={() => setIsOpen(false)}>
-        <MenuItem>
+      <CenterMenu isOpen={isOpen} onClick={() => setIsOpen(false)}>
+        <CenterItem>
           <MenuLink to="#main" color="primary" active={active} smooth>
             Home
           </MenuLink>
-        </MenuItem>
-        <MenuItem>
+        </CenterItem>
+        <CenterItem>
           <MenuLink to="#about" color="primary" active={active} smooth>
             About
           </MenuLink>
-        </MenuItem>
-        <MenuItem>
+        </CenterItem>
+        <CenterItem>
           <MenuLink to="#projects" color="primary" active={active} smooth>
             Projects
           </MenuLink>
-        </MenuItem>
-        <MenuItem>
+        </CenterItem>
+        <CenterItem>
           <MenuLink to="#contact" color="primary" active={active} smooth>
             Contact
           </MenuLink>
-        </MenuItem>
-        <MenuIcon>
+        </CenterItem>
+        <RightItem>
           <a
             href="https://github.com/eocebreiro"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon name="navgithub" height="30px"></Icon>
+            <Icon name="navgithub" height="30px" width="40px"></Icon>
           </a>
           <a
             href="https://www.linkedin.com/in/eric-cebreiro/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon name="navlinkedin" height="30px"></Icon>
+            <Icon name="navlinkedin" height="30px" width="30px"></Icon>
           </a>
-        </MenuIcon>
-      </Menu>
+        </RightItem>
+      </CenterMenu>
 
-      <NavbarIcons>
+      <RightMenu>
         <a
           href="https://github.com/eocebreiro"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Icon name="navgithub" height="30px"></Icon>
+          <Icon name="navgithub" height="30px" width="30px"></Icon>
         </a>
         <a
           href="https://www.linkedin.com/in/eric-cebreiro/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Icon name="navlinkedin" height="30px"></Icon>
+          <Icon name="navlinkedin" height="30px" width="30px"></Icon>
         </a>
-      </NavbarIcons>
+      </RightMenu>
     </Nav>
   );
 };

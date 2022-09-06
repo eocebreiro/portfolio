@@ -40,7 +40,7 @@ export const HamburgerContainer = styled.div`
   }
 `;
 
-export const Menu = styled.ul`
+export const CenterMenu = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,7 +67,7 @@ export const Menu = styled.ul`
   }
 `;
 
-export const MenuItem = styled.li`
+export const CenterItem = styled.li`
   list-style: none;
   padding: 0.25rem 2rem;
   @media ${device.laptop} {
@@ -95,16 +95,22 @@ export const MenuLink = styled(HashLink)`
   }
 `;
 
-export const MenuIcon = styled(MenuItem)`
+export const RightItem = styled(CenterItem)`
   display: none;
   justify-content: center;
   align-items: center;
-  gap: 30px;
   @media ${device.tablet} {
     display: flex;
   }
+  a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 `;
 
-export const NavbarIcons = styled(Menu)`
-  gap: 20px;
+export const RightMenu = styled(CenterMenu)`
+  a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 `;

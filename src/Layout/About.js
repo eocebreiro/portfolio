@@ -6,7 +6,7 @@ import {
   ColDiv,
 } from "../components/Div";
 import { H1 } from "../components/H1";
-import { P } from "../components/P";
+import { PCenter } from "../components/P";
 
 import Icon from "../components/Icons";
 
@@ -16,12 +16,12 @@ export const About = () => {
   return (
     <Section background="#edeff1" id="about">
       <ContentWrapper>
-        <H1 size="L">About</H1>
-        <P size="N">
+        <H1>About</H1>
+        <PCenter>
           I'm full-stack web developer who values learning and growing with
           people, teams, and technologies. My goal is to create engaging
           experiences for users, with a fine balance of technology and design.
-        </P>
+        </PCenter>
         <Icon name="react" height={height}></Icon>
         <Icon name="redux" height={height}></Icon>
         <Icon name="javascript" height={height}></Icon>

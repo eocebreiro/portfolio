@@ -1,13 +1,13 @@
 import { Div, Section, ContentWrapper } from "../components/Div";
 import { H1 } from "../components/H1";
-import { P } from "../components/P";
+import { PCenter } from "../components/P";
 
 export const Projects = () => {
   return (
     <Section background="#fff" id="projects">
       <ContentWrapper>
-        <H1 size="L">Projects</H1>
-        <P size="N">Collections of personal projects</P>
+        <H1>Projects</H1>
+        <PCenter>Collections of personal projects</PCenter>
         <Div>Project 1</Div>
         <Div>Project 2</Div>
         <Div>Project 3</Div>

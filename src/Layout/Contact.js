@@ -166,7 +166,7 @@ export const Contact = () => {
       <ContentWrapper style={{ height: "650px" }}>
         <Col>
           <Title>
-            <H1 size="L">Contact</H1>
+            <H1>Contact</H1>
             <PCenter>
               Use the form below or email{" "}
               <Span color="primary" style={{ fontWeight: "700" }}>

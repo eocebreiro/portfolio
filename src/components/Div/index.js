@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { device } from "../utils/device";
-import { handleColorType } from "../utils/handleTypes";
 
 export const Section = styled.div`
   display: flex;
@@ -35,7 +34,7 @@ export const LandingSection = styled(Section)`
 
 export const ContentWrapper = styled.div`
   width: 100%;
-  padding-top: 70px;
+  padding-top: 80px;
   max-width: 1100px;
   margin: 0 auto;
   flex-grow: 1;

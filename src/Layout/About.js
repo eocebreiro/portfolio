@@ -1,9 +1,6 @@
 import {
-  Div,
   Section,
   ContentWrapper,
-  RowDiv,
-  ColDiv,
   AboutContainer,
   TextContainer,
   IconContainer,
@@ -16,11 +13,10 @@ import {
   IconColMiddle1,
   IconColMiddle2,
 } from "../components/Div";
-import { H1 } from "../components/H1";
+import { SectionHeading } from "../components/SectionHeading";
 import { P, PCenter } from "../components/P";
 import { Button } from "../components/Button";
 import { ProfileImg } from "../components/ProfileImg";
-
 import { FancyIcon } from "../components/Icon";
 
 const height = "100px";
@@ -29,8 +25,7 @@ export const About = () => {
   return (
     <Section background="#edeff1" id="about">
       <ContentWrapper>
-        <H1>About</H1>
-
+        <SectionHeading>About</SectionHeading>
         <AboutContainer>
           <ProfileContainer>
             <ProfilePhoto>

@@ -6,13 +6,10 @@ import {
   Section,
   ContentWrapper,
   Title,
-  Row,
   Col,
   FormOverlay,
   FormDiv,
-  CenterDiv,
 } from "../components/Div";
-import { H1 } from "../components/H1";
 import { PCenter, Span } from "../components/P";
 import { Button } from "../components/Button";
 import { Input } from "../components/FormItems/Input";
@@ -21,6 +18,7 @@ import { FormGroup } from "../components/FormItems/FormGroup";
 import { Form } from "../components/FormItems/Form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { SectionHeading } from "../components/SectionHeading";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -162,11 +160,11 @@ export const Contact = () => {
     }
   };
   return (
-    <Section background="#edeff1" id="contact">
+    <Section style={{ minHeight: "100vh" }} id="contact">
       <ContentWrapper style={{ height: "650px" }}>
         <Col>
           <Title>
-            <H1>Contact</H1>
+            <SectionHeading>Contact</SectionHeading>
             <PCenter>
               Use the form below or email{" "}
               <Span color="primary" style={{ fontWeight: "700" }}>

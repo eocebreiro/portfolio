@@ -4,7 +4,7 @@ import { device } from "../utils/device";
 
 export const H1 = styled.h1`
   font-size: 3.5rem;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   text-align: center;
 
   @media ${device.laptop} {

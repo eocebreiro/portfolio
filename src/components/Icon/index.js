@@ -19,7 +19,15 @@ import NavGithubIcon from "./svg/navgithub";
 import NavLinkedinIcon from "./svg/navlinkedin";
 
 // Styled
-import { Box, Container, FancyBox, Name } from "./styledIcons";
+import {
+  Box,
+  IconContainer,
+  FancyBox,
+  Name,
+  IconDiv,
+  Wrapper,
+} from "./styledIcons";
+import { Fragment } from "react";
 
 const tidy = (string) => string.toLowerCase().trim();
 
@@ -106,9 +114,16 @@ export const Icon = ({ name, height = "100px", width = "100px" }) => (
 
 export const FancyIcon = ({ name, height = "100px", width = "100px" }) => (
   <FancyBox height={height} width={width}>
-    <Container>
-      <div style={{ height: height, width: width }}>{getIcon(tidy(name))}</div>
-      <Name>{getIconName(tidy(name))}</Name>
-    </Container>
+    <Wrapper>
+      <IconDiv>{getIcon(tidy(name))}</IconDiv>
+      {tidy(name) === "googlecloud" ? (
+        <Fragment>
+          <Name>Google</Name>
+          <Name>Cloud</Name>
+        </Fragment>
+      ) : (
+        <Name>{getIconName(tidy(name))}</Name>
+      )}
+    </Wrapper>
   </FancyBox>
 );

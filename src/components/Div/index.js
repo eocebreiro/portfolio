@@ -164,21 +164,58 @@ export const TextContainer = styled.div`
 `;
 
 export const IconContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-areas: "left mid1 mid2 right";
+  column-gap: 60px;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  @media ${device.tablet} {
+    column-gap: 0;
+    justify-content: space-around;
+  }
 `;
 
-export const IconColEnd = styled.div`
+export const IconColLeft = styled.div`
+  grid-area: left;
   display: grid;
   grid-template-rows: auto auto auto;
   gap: 30px;
+  @media ${device.mobileL} {
+    margin-right: 5px;
+    gap: 10px;
+  }
 `;
-export const IconColMiddle = styled.div`
+export const IconColRight = styled.div`
+  grid-area: right;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 30px;
+  @media ${device.mobileL} {
+    margin-right: 5px;
+    gap: 10px;
+  }
+`;
+export const IconColMiddle1 = styled.div`
+  grid-area: mid1;
   display: grid;
   grid-template-rows: auto auto auto auto;
   gap: 30px;
+  @media ${device.mobileL} {
+    margin-right: 5px;
+    gap: 10px;
+  }
+`;
+export const IconColMiddle2 = styled.div`
+  grid-area: mid2;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 30px;
+  @media ${device.mobileL} {
+    margin-right: 5px;
+    gap: 10px;
+  }
 `;
 
 export const IconBox = styled.div`

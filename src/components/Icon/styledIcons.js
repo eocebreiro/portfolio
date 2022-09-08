@@ -6,10 +6,35 @@ export const Box = styled.div`
   height: ${(props) => props.height};
   width: ${(props) => props.width};
 `;
+
+export const IconDiv = styled.div`
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  width: 65px;
+  height: 65px;
+  @media ${device.laptop} {
+    width: 65px;
+    height: 65px;
+  }
+  @media ${device.tablet} {
+    width: 45px;
+    height: 45px;
+  }
+  @media ${device.mobileL} {
+    width: 45px;
+    height: 45px;
+  }
+  @media ${device.mobile} {
+    width: 40px;
+    height: 40px;
+  }
+`;
+
 export const FancyBox = styled.div`
   border: double 3px transparent;
   border-image-splice: 1;
-  border-radius: 30px;
+  border-radius: 10px;
   background-image: linear-gradient(
       ${handleColorType("dark")},
       ${handleColorType("dark")}
@@ -17,13 +42,47 @@ export const FancyBox = styled.div`
     radial-gradient(circle at top left, cyan, ${handleColorType("primary")});
   background-origin: border-box;
   background-clip: content-box, border-box;
+  @media ${device.tablet} {
+    border: double 2px transparent;
+  }
+  @media ${device.mobileL} {
+    border: double 2px transparent;
+  }
+  @media ${device.mobile} {
+    border: double 1.5px transparent;
+  }
 `;
 
 export const Name = styled.p`
-  padding-top: 2px;
   text-align: center;
+  font-size: 1rem;
+  line-height: 15px;
+  line-spacing: 10px;
+  @media ${device.tablet} {
+    font-size: 0.85rem;
+  }
 `;
 
-export const Container = styled.div`
-  padding: 15px 25px;
+export const IconContainer = styled.div``;
+
+export const Wrapper = styled.div`
+  display: grid;
+  width: 115px;
+  height: 115px;
+  @media ${device.laptop} {
+    width: 105px;
+    height: 105px;
+  }
+  @media ${device.tablet} {
+    width: 85px;
+    height: 85px;
+  }
+  @media ${device.mobileL} {
+    width: 80px;
+    height: 80px;
+  }
+  @media ${device.mobile} {
+    width: 70px;
+    height: 75px;
+  }
 `;

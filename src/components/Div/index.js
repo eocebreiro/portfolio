@@ -35,7 +35,7 @@ export const LandingSection = styled(Section)`
 
 export const ContentWrapper = styled.div`
   width: 100%;
-  padding-top: 50px;
+  padding-top: 70px;
   max-width: 1100px;
   margin: 0 auto;
   flex-grow: 1;
@@ -45,10 +45,8 @@ export const ContentWrapper = styled.div`
   @media ${device.tablet} {
   }
   @media ${device.mobileL} {
-    padding-top: 70px;
   }
   @media ${device.mobile} {
-    padding-top: 70px;
   }
 `;
 
@@ -129,14 +127,17 @@ export const ProfileContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
+  gap: 100px;
+  width: 100%;
   @media ${device.tablet} {
     flex-direction: column;
+    width: 300px;
   }
 `;
 
 export const ProfilePhoto = styled.div`
   grid-area: photo;
-  padding-right: 20px;
+  padding-right: 30px;
   display: flex;
   justify-content: center;
   @media ${device.tablet} {
@@ -146,7 +147,7 @@ export const ProfilePhoto = styled.div`
 `;
 export const ProfileLinks = styled.div`
   grid-area: links;
-  padding-left: 20px;
+  padding-left: 30px;
   @media ${device.tablet} {
     display: flex;
     flex-direction: column;

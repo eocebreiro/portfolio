@@ -8,7 +8,6 @@ export const buttonStyles = css`
   font-size: 1.5rem;
   width: ${(props) => (props.width ? props.width : "auto")};
   cursor: pointer;
-  margin-right: 0.5rem;
   transition: all 0.3s ease;
   outline: none;
   letter-spacing: 3px;

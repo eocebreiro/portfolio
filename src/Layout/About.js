@@ -17,7 +17,7 @@ import {
   IconColMiddle2,
 } from "../components/Div";
 import { H1 } from "../components/H1";
-import { P } from "../components/P";
+import { P, PCenter } from "../components/P";
 import { Button } from "../components/Button";
 import { ProfileImg } from "../components/ProfileImg";
 
@@ -63,6 +63,12 @@ export const About = () => {
               experiences for users, with a fine balance of technology and
               design.
             </P>
+            <br></br>
+            <br></br>
+            <PCenter>
+              Here are some of the technologies I am currently using:
+            </PCenter>
+            <br></br>
           </TextContainer>
         </AboutContainer>
         <IconContainer>

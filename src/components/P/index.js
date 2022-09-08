@@ -6,7 +6,6 @@ export const P = styled.p`
   font-size: 1.2rem;
   letter-spacing: 1.5px;
   line-height: 1.8;
-  padding-bottom: 1rem;
   @media ${device.laptop} {
     font-size: 1.2rem;
   }

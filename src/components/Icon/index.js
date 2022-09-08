@@ -18,6 +18,9 @@ import SeleniumIcon from "./svg/selenium";
 import NavGithubIcon from "./svg/navgithub";
 import NavLinkedinIcon from "./svg/navlinkedin";
 
+// Styled
+import { Box, Container, FancyBox, Name } from "./styledIcons";
+
 const tidy = (string) => string.toLowerCase().trim();
 
 const getIcon = (name) => {
@@ -61,11 +64,51 @@ const getIcon = (name) => {
       return "";
   }
 };
-
-const Icons = ({ name, height = "100px", width = "100px" }) => (
-  <div style={{ height: height, width: width }} id={`${tidy(name)}-logo-icon`}>
+const getIconName = (name) => {
+  switch (tidy(name)) {
+    case "css":
+      return "CSS 3";
+    case "firebase":
+      return "Firebase";
+    case "git":
+      return "Git";
+    case "github":
+      return "Github";
+    case "googlecloud":
+      return "Google Cloud";
+    case "heroku":
+      return "Heroku";
+    case "html":
+      return "HTML 5";
+    case "javascript":
+      return "Javascript";
+    case "mongodb":
+      return "MongoDB";
+    case "node":
+      return "NodeJS";
+    case "python":
+      return "Python";
+    case "react":
+      return "React";
+    case "redux":
+      return "Redux";
+    case "selenium":
+      return "Selenium";
+    default:
+      return "";
+  }
+};
+export const Icon = ({ name, height = "100px", width = "100px" }) => (
+  <Box height={height} width={width}>
     {getIcon(tidy(name))}
-  </div>
+  </Box>
 );
 
-export default Icons;
+export const FancyIcon = ({ name, height = "100px", width = "100px" }) => (
+  <FancyBox height={height} width={width}>
+    <Container>
+      <div style={{ height: height, width: width }}>{getIcon(tidy(name))}</div>
+      <Name>{getIconName(tidy(name))}</Name>
+    </Container>
+  </FancyBox>
+);

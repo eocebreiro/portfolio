@@ -4,11 +4,22 @@ import {
   ContentWrapper,
   RowDiv,
   ColDiv,
+  AboutContainer,
+  TextContainer,
+  IconContainer,
+  ProfileContainer,
+  ProfilePhoto,
+  ProfileLinks,
+  ProfileButton,
+  IconColEnd,
+  IconColMiddle,
 } from "../components/Div";
 import { H1 } from "../components/H1";
-import { PCenter } from "../components/P";
+import { P } from "../components/P";
+import { Button } from "../components/Button";
+import { ProfileImg } from "../components/ProfileImg";
 
-import Icon from "../components/Icons";
+import { FancyIcon } from "../components/Icon";
 
 const height = "100px";
 
@@ -17,25 +28,65 @@ export const About = () => {
     <Section background="#edeff1" id="about">
       <ContentWrapper>
         <H1>About</H1>
-        <PCenter>
-          I'm full-stack web developer who values learning and growing with
-          people, teams, and technologies. My goal is to create engaging
-          experiences for users, with a fine balance of technology and design.
-        </PCenter>
-        <Icon name="react" height={height}></Icon>
-        <Icon name="redux" height={height}></Icon>
-        <Icon name="javascript" height={height}></Icon>
-        <Icon name="html" height={height}></Icon>
-        <Icon name="css" height={height}></Icon>
-        <Icon name="node" height={height}></Icon>
-        <Icon name="git" height={height}></Icon>
-        <Icon name="github" height={height}></Icon>
-        <Icon name="python" height={height}></Icon>
-        <Icon name="mongodb" height={height}></Icon>
-        <Icon name="heroku" height={height}></Icon>
-        <Icon name="googlecloud" height={height}></Icon>
-        <Icon name="firebase" height={height}></Icon>
-        <Icon name="selenium" height={height}></Icon>
+
+        <AboutContainer>
+          <ProfileContainer>
+            <ProfilePhoto>
+              <ProfileImg />
+            </ProfilePhoto>
+            <ProfileLinks>
+              <P>Name: Eric Cebreiro</P>
+              <P>Email: eoebreiro@gmail.com</P>
+              <P>
+                LinkedIn:{" "}
+                <a
+                  href="https://www.linkedin.com/in/eric-cebreiro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  eocebreiro
+                </a>
+              </P>
+              <ProfileButton>
+                <Button to="#contact" color="primary">
+                  Download Resume
+                </Button>
+              </ProfileButton>
+            </ProfileLinks>
+          </ProfileContainer>
+          <TextContainer>
+            <P>
+              I'm full-stack web developer who values learning and growing with
+              people, teams, and technologies. My goal is to create engaging
+              experiences for users, with a fine balance of technology and
+              design.
+            </P>
+          </TextContainer>
+        </AboutContainer>
+        <IconContainer>
+          <IconColEnd>
+            <FancyIcon name="react" height={height}></FancyIcon>
+            <FancyIcon name="redux" height={height}></FancyIcon>
+            <FancyIcon name="javascript" height={height}></FancyIcon>
+          </IconColEnd>
+          <IconColMiddle>
+            <FancyIcon name="html" height={height}></FancyIcon>
+            <FancyIcon name="css" height={height}></FancyIcon>
+            <FancyIcon name="node" height={height}></FancyIcon>
+            <FancyIcon name="git" height={height}></FancyIcon>
+          </IconColMiddle>
+          <IconColMiddle>
+            <FancyIcon name="github" height={height}></FancyIcon>
+            <FancyIcon name="python" height={height}></FancyIcon>
+            <FancyIcon name="mongodb" height={height}></FancyIcon>
+            <FancyIcon name="heroku" height={height}></FancyIcon>
+          </IconColMiddle>
+          <IconColEnd>
+            <FancyIcon name="googlecloud" height={height}></FancyIcon>
+            <FancyIcon name="firebase" height={height}></FancyIcon>
+            <FancyIcon name="selenium" height={height}></FancyIcon>
+          </IconColEnd>
+        </IconContainer>
       </ContentWrapper>
     </Section>
   );

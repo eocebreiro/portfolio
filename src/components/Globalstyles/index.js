@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-
+import { handleColorType } from "../utils/handleTypes";
 export const GlobalStyle = createGlobalStyle`
 * {
     box-sizing: border-box;
@@ -35,5 +35,8 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  a{
+    color: ${handleColorType("primary")}
   }
 `;

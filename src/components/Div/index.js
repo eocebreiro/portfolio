@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../utils/device";
+import { handleColorType } from "../utils/handleTypes";
 
 export const Section = styled.div`
   display: flex;
@@ -111,4 +112,75 @@ export const FormDiv = styled.div`
 
 export const GridDiv = styled.div`
   display: grid;
+`;
+
+//Used in About section
+export const AboutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media ${device.tablet} {
+  }
+`;
+
+export const ProfileContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  @media ${device.tablet} {
+    flex-direction: column;
+  }
+`;
+
+export const ProfilePhoto = styled.div`
+  grid-area: photo;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  @media ${device.tablet} {
+    padding-right: 0px;
+    padding-bottom: 10px;
+  }
+`;
+export const ProfileLinks = styled.div`
+  grid-area: links;
+  padding-left: 20px;
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+  }
+`;
+export const ProfileButton = styled.div`
+  grid-area: button;
+  padding-top: 20px;
+`;
+
+export const TextContainer = styled.div`
+  padding-bottom: 20px;
+`;
+
+export const IconContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+`;
+
+export const IconColEnd = styled.div`
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 30px;
+`;
+export const IconColMiddle = styled.div`
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 30px;
+`;
+
+export const IconBox = styled.div`
+  border: 1px solid green;
 `;

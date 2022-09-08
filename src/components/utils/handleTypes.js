@@ -3,12 +3,18 @@ export const handleColorType = (color) => {
   switch (color) {
     case "primary":
       return "#00b85b";
+
+    //Main Background
     case "dark":
-      return "";
+      return "#1a1a1a";
+
+    // NavBar
+    case "darklight":
+      return "rgba(40, 40, 40, 0.95)";
     case "light":
       return "";
     case "danger":
-      return "";
+      return "#dc3545";
     case "success":
       return "";
     default:

@@ -12,7 +12,7 @@ import {
   RightMenu,
   RightItem,
 } from "../components/Nav";
-import Icon from "../components/Icons";
+import { Icon } from "../components/Icon";
 
 export const Navbar = ({ active }) => {
   //blue: #1363DF

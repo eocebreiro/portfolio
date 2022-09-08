@@ -2,13 +2,6 @@ import styled from "styled-components";
 import { handleColorType } from "../utils/handleTypes";
 
 export const Input = styled.input`
-  p {
-    text-align: left;
-    padding: 0;
-    background: #dc3545;
-    text: #fff;
-  }
-
   padding: 0.5rem 1rem;
   height: 50px;
   font-size: 1rem;
@@ -27,7 +20,11 @@ export const Input = styled.input`
 
   ${(props) =>
     props.error
-      ? "background: linear-gradient(#dc3545, #dc3545) bottom / 0% 3px no-repeat #2b2b2b; background-size: 100% 3px; transition: background-size 1s;"
+      ? `background: linear-gradient(to right, ${handleColorType(
+          "danger"
+        )}, ${handleColorType(
+          "danger"
+        )}) bottom left / 0% 3px no-repeat #2b2b2b; background-size: 100% 3px; transition: background-size 1s;`
       : `background: linear-gradient(to right, ${handleColorType(
           "primary"
         )}, ${handleColorType(
@@ -56,7 +53,11 @@ export const TextArea = styled.textarea`
 
   ${(props) =>
     props.error
-      ? "background: linear-gradient(#dc3545, #dc3545) bottom / 0% 3px no-repeat #2b2b2b; background-size: 100% 3px; transition: background-size 1s;"
+      ? `background: linear-gradient(to right, ${handleColorType(
+          "danger"
+        )}, ${handleColorType(
+          "danger"
+        )}) bottom left / 0% 3px no-repeat #2b2b2b; background-size: 100% 3px; transition: background-size 1s;`
       : `background: linear-gradient(to right, ${handleColorType(
           "primary"
         )}, ${handleColorType(

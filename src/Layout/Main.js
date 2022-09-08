@@ -20,11 +20,6 @@ export const Main = () => {
         <PTitle size="title">I'm a full stack web developer.</PTitle>
       </SlideLeft>
       <Col>
-        {
-          //<Button to="#contact" type="main-page">
-          // Download Resume
-          // </Button>
-        }
         <SlideUp>
           <Button to="#about" color="primary">
             Learn More

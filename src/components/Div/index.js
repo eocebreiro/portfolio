@@ -131,6 +131,7 @@ export const ProfileContainer = styled.div`
   @media ${device.tablet} {
     flex-direction: column;
     width: 300px;
+    gap: 0px;
   }
 `;
 

@@ -19,8 +19,6 @@ import { Button } from "../components/Button";
 import { ProfileImg } from "../components/ProfileImg";
 import { FancyIcon } from "../components/Icon";
 
-const height = "100px";
-
 export const About = () => {
   return (
     <Section background="#edeff1" id="about">
@@ -68,26 +66,26 @@ export const About = () => {
         </AboutContainer>
         <IconContainer>
           <IconColLeft>
-            <FancyIcon name="react" height={height}></FancyIcon>
-            <FancyIcon name="redux" height={height}></FancyIcon>
-            <FancyIcon name="javascript" height={height}></FancyIcon>
+            <FancyIcon name="react"></FancyIcon>
+            <FancyIcon name="redux"></FancyIcon>
+            <FancyIcon name="javascript"></FancyIcon>
           </IconColLeft>
           <IconColMiddle1>
-            <FancyIcon name="html" height={height}></FancyIcon>
-            <FancyIcon name="css" height={height}></FancyIcon>
-            <FancyIcon name="node" height={height}></FancyIcon>
-            <FancyIcon name="git" height={height}></FancyIcon>
+            <FancyIcon name="html"></FancyIcon>
+            <FancyIcon name="css"></FancyIcon>
+            <FancyIcon name="node"></FancyIcon>
+            <FancyIcon name="git"></FancyIcon>
           </IconColMiddle1>
           <IconColMiddle2>
-            <FancyIcon name="github" height={height}></FancyIcon>
-            <FancyIcon name="python" height={height}></FancyIcon>
-            <FancyIcon name="mongodb" height={height}></FancyIcon>
-            <FancyIcon name="heroku" height={height}></FancyIcon>
+            <FancyIcon name="github"></FancyIcon>
+            <FancyIcon name="python"></FancyIcon>
+            <FancyIcon name="mongodb"></FancyIcon>
+            <FancyIcon name="heroku"></FancyIcon>
           </IconColMiddle2>
           <IconColRight>
-            <FancyIcon name="googlecloud" height={height}></FancyIcon>
-            <FancyIcon name="firebase" height={height}></FancyIcon>
-            <FancyIcon name="selenium" height={height}></FancyIcon>
+            <FancyIcon name="googlecloud"></FancyIcon>
+            <FancyIcon name="firebase"></FancyIcon>
+            <FancyIcon name="selenium"></FancyIcon>
           </IconColRight>
         </IconContainer>
       </ContentWrapper>

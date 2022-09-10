@@ -18,7 +18,7 @@ import { FormGroup } from "../components/FormItems/FormGroup";
 import { Form } from "../components/FormItems/Form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
-import { SectionHeading } from "../components/SectionHeading";
+import { H1 } from "../components/H1";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -164,7 +164,7 @@ export const Contact = () => {
       <ContentWrapper style={{ height: "650px" }}>
         <Col>
           <Title>
-            <SectionHeading>Contact</SectionHeading>
+            <H1>Contact</H1>
             <PCenter>
               Use the form below or email{" "}
               <Span color="primary" style={{ fontWeight: "700" }}>

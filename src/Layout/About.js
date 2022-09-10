@@ -13,7 +13,7 @@ import {
   IconColMiddle1,
   IconColMiddle2,
 } from "../components/Div";
-import { SectionHeading } from "../components/SectionHeading";
+import { H1 } from "../components/H1";
 import { P, PCenter } from "../components/P";
 import { Button } from "../components/Button";
 import { ProfileImg } from "../components/ProfileImg";
@@ -23,7 +23,7 @@ export const About = () => {
   return (
     <Section background="#edeff1" id="about">
       <ContentWrapper>
-        <SectionHeading>About</SectionHeading>
+        <H1>About</H1>
         <AboutContainer>
           <ProfileContainer>
             <ProfilePhoto>

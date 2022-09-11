@@ -52,16 +52,25 @@ export const About = () => {
           <TextContainer>
             <P>
               I'm full-stack web developer who values learning and growing with
-              people, teams, and technologies. My goal is to create engaging
+              people, teams, and technologies. I love spending time coding and
+              encountering new challenges. My goal is to create engaging
               experiences for users, with a fine balance of technology and
               design.
             </P>
-            <br></br>
-            <br></br>
+            <br />
+            <P>
+              My previous career as a university professor allowed me to be
+              collaborative and creative, which is something I now enjoy
+              bringing to my code. Being in education for 10 years has taught me
+              it's never too late to learn. I'm excited to make the leap and
+              continue refining my skills with the right company.
+            </P>
+            <br />
+            <br />
             <PCenter>
               Here are some of the technologies I am currently using:
             </PCenter>
-            <br></br>
+            <br />
           </TextContainer>
         </AboutContainer>
         <IconContainer>

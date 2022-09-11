@@ -5,7 +5,7 @@ import { device } from "../utils/device";
 export const buttonStyles = css`
   display: inline-block;
   padding: 0.4rem 1.3rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   width: ${(props) => (props.width ? props.width : "auto")};
   cursor: pointer;
   transition: all 0.3s ease;
@@ -25,10 +25,10 @@ export const buttonStyles = css`
   }
 
   @media ${device.laptop} {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
   @media ${device.tablet} {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
   @media ${device.mobileL} {
     font-size: 1rem;

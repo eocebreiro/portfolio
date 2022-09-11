@@ -1,13 +1,14 @@
 import {
   Section,
-  ContentWrapper,
   AboutContainer,
   TextContainer,
   IconContainer,
   ProfileContainer,
   ProfilePhoto,
   ProfileLinks,
-  ProfileButton,
+  ContactButton,
+  ResumeButton,
+  IconText,
   IconColLeft,
   IconColRight,
   IconColMiddle1,
@@ -21,59 +22,78 @@ import { FancyIcon } from "../components/Icon";
 
 export const About = () => {
   return (
-    <Section background="#edeff1" id="about">
-      <ContentWrapper>
-        <H1>About</H1>
-        <AboutContainer>
-          <ProfileContainer>
-            <ProfilePhoto>
-              <ProfileImg />
-            </ProfilePhoto>
-            <ProfileLinks>
-              <P>Name: Eric Cebreiro</P>
-              <P>Email: eoebreiro@gmail.com</P>
-              <P>
-                LinkedIn:{" "}
-                <a
-                  href="https://www.linkedin.com/in/eric-cebreiro/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  eocebreiro
-                </a>
-              </P>
-              <ProfileButton>
-                <Button to="#contact" color="primary">
-                  Download Resume
-                </Button>
-              </ProfileButton>
-            </ProfileLinks>
-          </ProfileContainer>
-          <TextContainer>
-            <P>
-              I'm full-stack web developer who values learning and growing with
-              people, teams, and technologies. I love spending time coding and
-              encountering new challenges. My goal is to create engaging
-              experiences for users, with a fine balance of technology and
-              design.
-            </P>
-            <br />
-            <P>
-              My previous career as a university professor allowed me to be
-              collaborative and creative, which is something I now enjoy
-              bringing to my code. Being in education for 10 years has taught me
-              it's never too late to learn. I'm excited to make the leap and
-              continue refining my skills with the right company.
-            </P>
-            <br />
-            <br />
+    <Section id="about">
+      <H1>About</H1>
+      <AboutContainer>
+        <ProfileContainer>
+          <ProfilePhoto>
+            <ProfileImg />
+          </ProfilePhoto>
+          <ProfileLinks>
+            <PCenter>Name: Eric Cebreiro</PCenter>
+            <PCenter>Email: eoebreiro@gmail.com</PCenter>
+            <PCenter>
+              LinkedIn:{" "}
+              <a
+                href="https://www.linkedin.com/in/eric-cebreiro/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                eocebreiro
+              </a>
+            </PCenter>
+            <ContactButton>
+              <Button to="#contact" color="primary">
+                Contact
+              </Button>
+            </ContactButton>
+            <ResumeButton>
+              <Button to="#contact" color="primary">
+                Download Resume
+              </Button>
+            </ResumeButton>
+          </ProfileLinks>
+        </ProfileContainer>
+        <TextContainer>
+          <P>
+            I'm full-stack web developer who values learning and growing with
+            people, teams, and technologies. I love spending time coding and
+            encountering new challenges. My goal is to create engaging
+            experiences for users, with a fine balance of technology and design.
+          </P>
+          <br />
+          <P>
+            My previous career as a university professor allowed me to be
+            collaborative and creative, which is something I now enjoy bringing
+            to my code. Being in education for 10 years has taught me it's never
+            too late to learn. I'm excited to make the leap and continue
+            refining my skills with the right company.
+          </P>
+          <br />
+          <P>
+            My previous career as a university professor allowed me to be
+            collaborative and creative, which is something I now enjoy bringing
+            to my code. Being in education for 10 years has taught me it's never
+            too late to learn. I'm excited to make the leap and continue
+            refining my skills with the right company.
+          </P>
+          <br />
+          <P>
+            My previous career as a university professor allowed me to be
+            collaborative and creative, which is something I now enjoy bringing
+            to my code. Being in education for 10 years has taught me it's never
+            too late to learn. I'm excited to make the leap and continue
+            refining my skills with the right company.
+          </P>
+        </TextContainer>
+
+        <IconContainer>
+          <IconText>
             <PCenter>
               Here are some of the technologies I am currently using:
             </PCenter>
             <br />
-          </TextContainer>
-        </AboutContainer>
-        <IconContainer>
+          </IconText>
           <IconColLeft>
             <FancyIcon name="react"></FancyIcon>
             <FancyIcon name="redux"></FancyIcon>
@@ -97,7 +117,7 @@ export const About = () => {
             <FancyIcon name="selenium"></FancyIcon>
           </IconColRight>
         </IconContainer>
-      </ContentWrapper>
+      </AboutContainer>
     </Section>
   );
 };

@@ -2,6 +2,25 @@ import styled from "styled-components";
 import { device } from "../utils/device";
 
 export const Section = styled.div`
+  width: 100%;
+  padding-top: 80px;
+  padding-right: 10px;
+  padding-left: 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-grow: 1;
+
+  @media ${device.laptop} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.mobileL} {
+  }
+  @media ${device.mobile} {
+  }
+`;
+export const LandingSection = styled.div`
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -27,9 +46,6 @@ export const Section = styled.div`
     padding-right: 1rem;
     padding-left: 1rem;
   }
-`;
-export const LandingSection = styled(Section)`
-  min-height: 100vh;
 `;
 
 export const ContentWrapper = styled.div`
@@ -113,109 +129,118 @@ export const GridDiv = styled.div`
 
 //Used in About section
 export const AboutContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-areas: "profile text" "profile icons";
+  column-gap: 40px;
   @media ${device.tablet} {
+    grid-template-areas: "profile" "text" "icons";
   }
 `;
 
 export const ProfileContainer = styled.div`
+  grid-area: profile;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
-  gap: 100px;
-  width: 100%;
+  width: 300px;
   @media ${device.tablet} {
-    flex-direction: column;
-    width: 300px;
-    gap: 0px;
+    width: 100%;
   }
 `;
 
 export const ProfilePhoto = styled.div`
   grid-area: photo;
-  padding-right: 30px;
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
   @media ${device.tablet} {
-    padding-right: 0px;
-    padding-bottom: 10px;
   }
 `;
 export const ProfileLinks = styled.div`
   grid-area: links;
-  padding-left: 30px;
   @media ${device.tablet} {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0px;
   }
 `;
-export const ProfileButton = styled.div`
+export const ResumeButton = styled.div`
   grid-area: button;
-  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+`;
+
+export const ContactButton = styled.div`
+  grid-area: button;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 `;
 
 export const TextContainer = styled.div`
-  padding-bottom: 20px;
+  grid-area: text;
+  padding-bottom: 50px;
 `;
 
 export const IconContainer = styled.div`
+  grid-area: icons;
   display: grid;
-  grid-template-areas: "left mid1 mid2 right";
-  column-gap: 60px;
-  justify-content: center;
+  grid-template-areas: "top top top top" "left mid1 mid2 right";
+  column-gap: 10px;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+`;
 
-  @media ${device.tablet} {
-    column-gap: 0;
-    justify-content: space-around;
-  }
+export const IconText = styled.div`
+  grid-area: top;
 `;
 
 export const IconColLeft = styled.div`
   grid-area: left;
   display: grid;
+  justify-content: center;
   grid-template-rows: auto auto auto;
-  gap: 30px;
+  row-gap: 30px;
+  margin-right: 5px;
+
   @media ${device.mobileL} {
-    margin-right: 5px;
     gap: 10px;
   }
 `;
 export const IconColRight = styled.div`
   grid-area: right;
   display: grid;
+  justify-content: center;
   grid-template-rows: auto auto auto;
-  gap: 30px;
+  row-gap: 30px;
+  margin-right: 5px;
+
   @media ${device.mobileL} {
-    margin-right: 5px;
-    gap: 10px;
+    row-gap: 10px;
   }
 `;
 export const IconColMiddle1 = styled.div`
   grid-area: mid1;
   display: grid;
+  justify-content: center;
   grid-template-rows: auto auto auto auto;
-  gap: 30px;
+  row-gap: 30px;
+  margin-right: 5px;
+
   @media ${device.mobileL} {
-    margin-right: 5px;
-    gap: 10px;
+    row-gap: 10px;
   }
 `;
 export const IconColMiddle2 = styled.div`
   grid-area: mid2;
   display: grid;
+  justify-content: center;
   grid-template-rows: auto auto auto auto;
-  gap: 30px;
+  row-gap: 30px;
+  margin-right: 5px;
+
   @media ${device.mobileL} {
-    margin-right: 5px;
-    gap: 10px;
+    row-gap: 10px;
   }
 `;
 

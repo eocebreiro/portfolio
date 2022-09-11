@@ -4,7 +4,6 @@ import axios from "axios";
 import {
   GridDiv,
   Section,
-  ContentWrapper,
   Title,
   Col,
   FormOverlay,
@@ -161,118 +160,116 @@ export const Contact = () => {
   };
   return (
     <Section style={{ minHeight: "100vh" }} id="contact">
-      <ContentWrapper style={{ height: "650px" }}>
-        <Col>
-          <Title>
-            <H1>Contact</H1>
-            <PCenter>
-              Use the form below or email{" "}
-              <Span color="primary" style={{ fontWeight: "700" }}>
-                eocebreiro@gmail.com
-              </Span>{" "}
-              to contact me.
-            </PCenter>
-          </Title>
+      <Col>
+        <Title>
+          <H1>Contact</H1>
+          <PCenter>
+            Use the form below or email{" "}
+            <Span color="primary" style={{ fontWeight: "700" }}>
+              eocebreiro@gmail.com
+            </Span>{" "}
+            to contact me.
+          </PCenter>
+        </Title>
 
-          <Form>
-            <GridDiv>
-              <FormDiv active={isFormActive}>
-                <FormGroup>
-                  <Input
-                    type="text"
-                    placeholder="Name"
-                    name="name"
-                    value={name}
-                    onChange={(e) => onChange(e)}
-                    required
-                    autoComplete="on"
-                    NoValidate
-                    error={isErrName}
-                  />
-                </FormGroup>
-                <FormGroup>
-                  <Input
-                    type="text"
-                    placeholder="Email"
-                    name="email"
-                    value={email}
-                    onChange={(e) => onChange(e)}
-                    required
-                    autoComplete="on"
-                    NoValidate
-                    error={isErrEmail}
-                  />
-                </FormGroup>
-                <FormGroup>
-                  <Input
-                    type="text"
-                    placeholder="Phone number (optional)"
-                    name="phone"
-                    value={phone}
-                    onChange={(e) => onChange(e)}
-                    autoComplete="on"
-                    NoValidate
-                    error={isErrPhone}
-                  />
-                </FormGroup>
-                <FormGroup>
-                  <TextArea
-                    type="text"
-                    placeholder="Message"
-                    name="message"
-                    value={message}
-                    onChange={(e) => onChange(e)}
-                    autoComplete="off"
-                    NoValidate
-                    error={isErrMessage}
-                    rows="7"
-                  />
-                </FormGroup>
+        <Form>
+          <GridDiv>
+            <FormDiv active={isFormActive}>
+              <FormGroup>
                 <Input
-                  type="submit"
-                  onClick={(e) => onSubmit(e)}
-                  display="none"
+                  type="text"
+                  placeholder="Name"
+                  name="name"
+                  value={name}
+                  onChange={(e) => onChange(e)}
+                  required
+                  autoComplete="on"
+                  NoValidate
+                  error={isErrName}
                 />
-                <Button
-                  type="submit"
-                  onClick={(e) => onSubmit(e)}
-                  width="100%"
-                  color="primary"
-                >
-                  Send Message!
-                </Button>
-              </FormDiv>
-              <FormOverlay active={isOverlayActive}>
-                {isLoading ? (
-                  <FontAwesomeIcon icon={faSpinner} pulse size="6x" />
-                ) : isSuccess ? (
-                  <Fragment>
-                    <PCenter style={{ fontWeight: "700" }}>
-                      Email sent sucessfully!
-                    </PCenter>
-                    <Button
-                      type="submit"
-                      onClick={(e) => resetForm(e)}
-                      color="primary"
-                    >
-                      Send Another Email
-                    </Button>
-                  </Fragment>
-                ) : (
-                  <Fragment>
-                    <PCenter style={{ fontWeight: "700" }}>
-                      Opps, something went wrong.
-                    </PCenter>
-                    <Button type="submit" onClick={(e) => resetForm(e)}>
-                      Try Again
-                    </Button>
-                  </Fragment>
-                )}
-              </FormOverlay>
-            </GridDiv>
-          </Form>
-        </Col>
-      </ContentWrapper>
+              </FormGroup>
+              <FormGroup>
+                <Input
+                  type="text"
+                  placeholder="Email"
+                  name="email"
+                  value={email}
+                  onChange={(e) => onChange(e)}
+                  required
+                  autoComplete="on"
+                  NoValidate
+                  error={isErrEmail}
+                />
+              </FormGroup>
+              <FormGroup>
+                <Input
+                  type="text"
+                  placeholder="Phone number (optional)"
+                  name="phone"
+                  value={phone}
+                  onChange={(e) => onChange(e)}
+                  autoComplete="on"
+                  NoValidate
+                  error={isErrPhone}
+                />
+              </FormGroup>
+              <FormGroup>
+                <TextArea
+                  type="text"
+                  placeholder="Message"
+                  name="message"
+                  value={message}
+                  onChange={(e) => onChange(e)}
+                  autoComplete="off"
+                  NoValidate
+                  error={isErrMessage}
+                  rows="7"
+                />
+              </FormGroup>
+              <Input
+                type="submit"
+                onClick={(e) => onSubmit(e)}
+                display="none"
+              />
+              <Button
+                type="submit"
+                onClick={(e) => onSubmit(e)}
+                width="100%"
+                color="primary"
+              >
+                Send Message!
+              </Button>
+            </FormDiv>
+            <FormOverlay active={isOverlayActive}>
+              {isLoading ? (
+                <FontAwesomeIcon icon={faSpinner} pulse size="6x" />
+              ) : isSuccess ? (
+                <Fragment>
+                  <PCenter style={{ fontWeight: "700" }}>
+                    Email sent sucessfully!
+                  </PCenter>
+                  <Button
+                    type="submit"
+                    onClick={(e) => resetForm(e)}
+                    color="primary"
+                  >
+                    Send Another Email
+                  </Button>
+                </Fragment>
+              ) : (
+                <Fragment>
+                  <PCenter style={{ fontWeight: "700" }}>
+                    Opps, something went wrong.
+                  </PCenter>
+                  <Button type="submit" onClick={(e) => resetForm(e)}>
+                    Try Again
+                  </Button>
+                </Fragment>
+              )}
+            </FormOverlay>
+          </GridDiv>
+        </Form>
+      </Col>
     </Section>
   );
 };

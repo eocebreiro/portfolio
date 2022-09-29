@@ -15,7 +15,7 @@ import {
   IconColMiddle2,
 } from "../components/Div";
 import { H1 } from "../components/H1";
-import { P, PCenter } from "../components/P";
+import { PAbout, PCenter } from "../components/P";
 import { Button } from "../components/Button";
 import { ProfileImg } from "../components/ProfileImg";
 import { FancyIcon } from "../components/Icon";
@@ -55,36 +55,36 @@ export const About = () => {
           </ProfileLinks>
         </ProfileContainer>
         <TextContainer>
-          <P>
+          <PAbout>
             I'm full-stack web developer who values learning and growing with
             people, teams, and technologies. I love spending time coding and
             encountering new challenges. My goal is to create engaging
             experiences for users, with a fine balance of technology and design.
-          </P>
+          </PAbout>
           <br />
-          <P>
+          <PAbout>
             My previous career as a university professor allowed me to be
             collaborative and creative, which is something I now enjoy bringing
             to my code. Being in education for 10 years has taught me it's never
             too late to learn. I'm excited to make the leap and continue
             refining my skills with the right company.
-          </P>
+          </PAbout>
           <br />
-          <P>
+          <PAbout>
             My previous career as a university professor allowed me to be
             collaborative and creative, which is something I now enjoy bringing
             to my code. Being in education for 10 years has taught me it's never
             too late to learn. I'm excited to make the leap and continue
             refining my skills with the right company.
-          </P>
+          </PAbout>
           <br />
-          <P>
+          <PAbout>
             My previous career as a university professor allowed me to be
             collaborative and creative, which is something I now enjoy bringing
             to my code. Being in education for 10 years has taught me it's never
             too late to learn. I'm excited to make the leap and continue
             refining my skills with the right company.
-          </P>
+          </PAbout>
         </TextContainer>
 
         <IconContainer>

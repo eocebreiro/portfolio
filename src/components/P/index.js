@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { handleColorType } from "../utils/handleTypes";
 import { device } from "../utils/device";
 
-export const P = styled.p`
+export const PAbout = styled.p`
   font-size: 1.2rem;
   letter-spacing: 1.5px;
   line-height: 1.8;
@@ -20,7 +20,7 @@ export const P = styled.p`
   }
 `;
 
-export const PCenter = styled(P)`
+export const PCenter = styled(PAbout)`
   text-align: center;
 `;
 
@@ -44,7 +44,23 @@ export const PTitle = styled.p`
     font-size: 1.5rem;
   }
 `;
+
 export const Span = styled.span`
     color: ${(props) => props.color && handleColorType(props.color)}
+  }
+`;
+
+// Used in Projects
+export const P = styled.p`
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+`;
+export const SubHeading = styled.p`
+  font-size: 1.75rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  @media ${device.tablet} {
+    text-align: center;
   }
 `;

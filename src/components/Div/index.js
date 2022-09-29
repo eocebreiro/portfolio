@@ -4,8 +4,8 @@ import { device } from "../utils/device";
 export const Section = styled.div`
   width: 100%;
   padding-top: 80px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
   max-width: 1100px;
   margin: 0 auto;
   flex-grow: 1;
@@ -15,8 +15,12 @@ export const Section = styled.div`
   @media ${device.tablet} {
   }
   @media ${device.mobileL} {
+    padding-right: 20px;
+    padding-left: 20px;
   }
   @media ${device.mobile} {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 `;
 export const LandingSection = styled.div`
@@ -127,7 +131,8 @@ export const GridDiv = styled.div`
   display: grid;
 `;
 
-//Used in About section
+// Divs used in the About section
+
 export const AboutContainer = styled.div`
   display: grid;
   grid-template-areas: "profile text" "profile icons";
@@ -246,4 +251,63 @@ export const IconColMiddle2 = styled.div`
 
 export const IconBox = styled.div`
   border: 1px solid green;
+`;
+
+// Divs used in the Projects section
+
+export const ProjectContainer = styled.div``;
+
+export const ProjectRow = styled.div`
+  display: grid;
+  grid-template-areas: "text image";
+  column-gap: 40px;
+  padding-bottom: 20px;
+
+  @media ${device.tablet} {
+    grid-template-areas: "text" "image";
+  }
+`;
+export const ProjectInfo = styled.div`
+  gird-area: text;
+  background: green;
+  padding-bottom: 20px;
+  width: 300px;
+  @media ${device.tablet} {
+    width: 100%;
+  }
+`;
+export const ProjectPhoto = styled.div`
+  grid-area: image;
+  background: grey;
+  border: 1px solid red;
+  width: 100%;
+`;
+
+export const ButtonBox = styled.div`
+  padding-top: 10px;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-rows: auto auto;
+  @media ${device.tablet} {
+    grid-template-rows: none;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+  }
+`;
+export const ButtonItem = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const ButtonWebsite = styled(ButtonItem)`
+  @media ${device.tablet} {
+    justify-content: end;
+  }
+`;
+
+export const ButtonGithub = styled(ButtonItem)`
+  @media ${device.tablet} {
+    justify-content: start;
+  }
 `;

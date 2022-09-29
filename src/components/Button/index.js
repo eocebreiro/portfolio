@@ -8,14 +8,9 @@ import { StyledButton } from "./StyledButton";
 export const Button = (props) => {
   // Render an anchor tag (Link)
   let button = (
-    <StyledLink
-      to={props.to}
-      onClick={props.onClick}
-      width={props.width}
-      color={props.color}
-    >
+    <StyledButton color={props.color}>
       {Children.toArray(props.children)}
-    </StyledLink>
+    </StyledButton>
   );
 
   // Render a hash link

@@ -41,7 +41,7 @@ export const Projects = () => {
             </ButtonGithub>
           </ButtonBox>
         </ProjectInfo>
-        <ProjectPhoto>TESSST</ProjectPhoto>
+        <ProjectPhoto>asdf</ProjectPhoto>
       </ProjectRow>
       <ProjectRow>
         <ProjectInfo>
@@ -52,22 +52,28 @@ export const Projects = () => {
             quae ab illo inventore veritatis et quasi architecto beatae vitae
             dicta sunt explicabo.{" "}
           </P>
-          <a
-            href="https://eocebreiro.github.io/pokedex/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button color="primary">Website</Button>
-          </a>
-          <a
-            href="https://github.com/eocebreiro/pokedex"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button color="primary">Github</Button>
-          </a>
+          <ButtonBox>
+            <ButtonWebsite>
+              <a
+                href="https://eocebreiro.github.io/pokedex/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button color="primary">Website</Button>
+              </a>
+            </ButtonWebsite>
+            <ButtonGithub>
+              <a
+                href="https://github.com/eocebreiro/pokedex"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button color="primary">Github</Button>
+              </a>
+            </ButtonGithub>
+          </ButtonBox>
         </ProjectInfo>
-        <ProjectPhoto>TESSST</ProjectPhoto>
+        <ProjectPhoto></ProjectPhoto>
       </ProjectRow>
       <ProjectRow>
         <ProjectInfo>
@@ -78,16 +84,22 @@ export const Projects = () => {
             quae ab illo inventore veritatis et quasi architecto beatae vitae
             dicta sunt explicabo.{" "}
           </P>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <Button color="primary">Website</Button>
-          </a>
-          <a
-            href="https://github.com/eocebreiro/my-gaming-tracker"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button color="primary">Github</Button>
-          </a>
+          <ButtonBox>
+            <ButtonWebsite>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <Button color="primary">Website</Button>
+              </a>
+            </ButtonWebsite>
+            <ButtonGithub>
+              <a
+                href="https://github.com/eocebreiro/my-gaming-tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button color="primary">Github</Button>
+              </a>
+            </ButtonGithub>
+          </ButtonBox>
         </ProjectInfo>
         <ProjectPhoto>TESSST</ProjectPhoto>
       </ProjectRow>
@@ -100,16 +112,26 @@ export const Projects = () => {
             quae ab illo inventore veritatis et quasi architecto beatae vitae
             dicta sunt explicabo.{" "}
           </P>
-          <a href="https://ericc.dev" target="_blank" rel="noopener noreferrer">
-            <Button color="primary">Website</Button>
-          </a>
-          <a
-            href="https://github.com/eocebreiro/portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button color="primary">Github</Button>
-          </a>
+          <ButtonBox>
+            <ButtonWebsite>
+              <a
+                href="https://ericc.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button color="primary">Website</Button>
+              </a>
+            </ButtonWebsite>
+            <ButtonGithub>
+              <a
+                href="https://github.com/eocebreiro/portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button color="primary">Github</Button>
+              </a>
+            </ButtonGithub>
+          </ButtonBox>
         </ProjectInfo>
         <ProjectPhoto>TESSST</ProjectPhoto>
       </ProjectRow>
@@ -122,13 +144,17 @@ export const Projects = () => {
             quae ab illo inventore veritatis et quasi architecto beatae vitae
             dicta sunt explicabo.{" "}
           </P>
-          <a
-            href="https://katrinacebreiro.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button color="primary">Website</Button>
-          </a>
+          <ButtonBox>
+            <ButtonWebsite>
+              <a
+                href="https://katrinacebreiro.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button color="primary">Website</Button>
+              </a>
+            </ButtonWebsite>
+          </ButtonBox>
         </ProjectInfo>
         <ProjectPhoto>TESSST</ProjectPhoto>
       </ProjectRow>

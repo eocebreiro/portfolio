@@ -69,22 +69,6 @@ export const About = () => {
             too late to learn. I'm excited to make the leap and continue
             refining my skills with the right company.
           </PAbout>
-          <br />
-          <PAbout>
-            My previous career as a university professor allowed me to be
-            collaborative and creative, which is something I now enjoy bringing
-            to my code. Being in education for 10 years has taught me it's never
-            too late to learn. I'm excited to make the leap and continue
-            refining my skills with the right company.
-          </PAbout>
-          <br />
-          <PAbout>
-            My previous career as a university professor allowed me to be
-            collaborative and creative, which is something I now enjoy bringing
-            to my code. Being in education for 10 years has taught me it's never
-            too late to learn. I'm excited to make the leap and continue
-            refining my skills with the right company.
-          </PAbout>
         </TextContainer>
 
         <IconContainer>

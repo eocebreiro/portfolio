@@ -255,14 +255,12 @@ export const IconBox = styled.div`
 
 // Divs used in the Projects section
 
-export const ProjectContainer = styled.div``;
-
 export const ProjectRow = styled.div`
   display: grid;
   grid-template-areas: "text image";
   grid-auto-columns: minmax(auto, 300px) 1fr;
   column-gap: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
   @media ${device.tablet} {
     grid-template-areas: "text" "image";
     grid-auto-columns: 1fr 1fr;
@@ -277,11 +275,14 @@ export const ProjectInfo = styled.div`
 `;
 
 export const ProjectPhoto = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: image;
 `;
 
 export const ButtonBox = styled.div`
-  padding-top: 10px;
+  padding-top: 20px;
   display: grid;
   column-gap: 10px;
   row-gap: 10px;
@@ -305,4 +306,8 @@ export const ButtonGithub = styled(ButtonItem)`
   @media ${device.tablet} {
     justify-content: start;
   }
+`;
+
+export const Image = styled.div`
+  display: block;
 `;

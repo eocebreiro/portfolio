@@ -5,6 +5,10 @@ import { StyledLink } from "./StyledLink";
 import { StyledHashLink } from "./StyledLink";
 import { StyledButton } from "./StyledButton";
 
+//Font Awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+
 export const Button = (props) => {
   // Render an anchor tag (Link)
   let button = (
@@ -29,6 +33,25 @@ export const Button = (props) => {
       );
     }
   }
+  // If a github button
+  if (props.color) {
+    if (props.color === "github") {
+      button = (
+        <StyledButton color={props.color}>
+          <FontAwesomeIcon icon="fa-brands fa-github" /> Github
+        </StyledButton>
+      );
+    }
+    if (props.color === "website") {
+      button = (
+        <StyledButton color={props.color}>
+          {" "}
+          <FontAwesomeIcon icon={faGlobe} /> Visit Site
+        </StyledButton>
+      );
+    }
+  }
+
   // If the Button has a handleRoute prop, we want to render a button
   if (props.onClick) {
     button = (

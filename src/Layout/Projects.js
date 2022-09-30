@@ -8,12 +8,17 @@ import {
   ButtonBox,
   ButtonWebsite,
   ButtonGithub,
+  Image,
 } from "../components/Div";
-
-import { P, SubHeading } from "../components/P";
-import { PCenter } from "../components/P";
+import { P, PrimaryColor, SubHeading } from "../components/P";
 import { H1 } from "../components/H1";
 import { Button } from "../components/Button";
+import { Img } from "../components/Img";
+
+// Project Images
+import pokedexImg from "../img/pokedex.png";
+import katrinacebreiroImg from "../img/katrinacebreiro.png";
+import ericcImg from "../img/ericc.png";
 
 export const Projects = () => {
   return (
@@ -31,12 +36,12 @@ export const Projects = () => {
           <ButtonBox>
             <ButtonWebsite>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <Button color="primary">Website</Button>
+                <Button color="website" />
               </a>
             </ButtonWebsite>
             <ButtonGithub>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <Button color="primary">Github</Button>
+                <Button color="github" />
               </a>
             </ButtonGithub>
           </ButtonBox>
@@ -59,7 +64,7 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button color="primary">Website</Button>
+                <Button color="website" />
               </a>
             </ButtonWebsite>
             <ButtonGithub>
@@ -68,12 +73,16 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button color="primary">Github</Button>
+                <Button color="github" />
               </a>
             </ButtonGithub>
           </ButtonBox>
         </ProjectInfo>
-        <ProjectPhoto></ProjectPhoto>
+        <ProjectPhoto>
+          <Image>
+            <Img src={pokedexImg} />
+          </Image>
+        </ProjectPhoto>
       </ProjectRow>
       <ProjectRow>
         <ProjectInfo>
@@ -87,7 +96,7 @@ export const Projects = () => {
           <ButtonBox>
             <ButtonWebsite>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <Button color="primary">Website</Button>
+                <Button color="website" />
               </a>
             </ButtonWebsite>
             <ButtonGithub>
@@ -96,7 +105,7 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button color="primary">Github</Button>
+                <Button color="github" />
               </a>
             </ButtonGithub>
           </ButtonBox>
@@ -107,10 +116,10 @@ export const Projects = () => {
         <ProjectInfo>
           <SubHeading>Personal Portfolio</SubHeading>
           <P>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.{" "}
+            A single page completely responsive web portfolio to showcase
+            projects, skills, and many more information. Built with
+            <PrimaryColor> React</PrimaryColor> and{" "}
+            <PrimaryColor> Styled-Components</PrimaryColor>.
           </P>
           <ButtonBox>
             <ButtonWebsite>
@@ -119,7 +128,7 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button color="primary">Website</Button>
+                <Button color="website" />
               </a>
             </ButtonWebsite>
             <ButtonGithub>
@@ -128,12 +137,16 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button color="primary">Github</Button>
+                <Button color="github" />
               </a>
             </ButtonGithub>
           </ButtonBox>
         </ProjectInfo>
-        <ProjectPhoto>TESSST</ProjectPhoto>
+        <ProjectPhoto>
+          <Image>
+            <Img src={ericcImg} />
+          </Image>
+        </ProjectPhoto>
       </ProjectRow>
       <ProjectRow>
         <ProjectInfo>
@@ -151,12 +164,16 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button color="primary">Website</Button>
+                <Button color="website" />
               </a>
             </ButtonWebsite>
           </ButtonBox>
         </ProjectInfo>
-        <ProjectPhoto>TESSST</ProjectPhoto>
+        <ProjectPhoto>
+          <Image>
+            <Img src={katrinacebreiroImg} />
+          </Image>
+        </ProjectPhoto>
       </ProjectRow>
     </Section>
   );

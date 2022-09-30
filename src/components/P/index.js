@@ -64,3 +64,7 @@ export const SubHeading = styled.p`
     text-align: center;
   }
 `;
+
+export const PrimaryColor = styled.span`
+  color: ${handleColorType("primary")};
+`;

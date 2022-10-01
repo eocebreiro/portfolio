@@ -4,14 +4,14 @@ import { device } from "../utils/device";
 
 export const buttonStyles = css`
   display: inline-block;
-  padding: 0.4rem 1.3rem;
+  padding: 0.4rem 0.7rem;
   border-radius: 5px;
   font-size: 1.25rem;
   width: ${(props) => (props.width ? props.width : "auto")};
   cursor: pointer;
   transition: all 0.3s ease;
   outline: none;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-decoration: transparent;
   background: none;
   ${(props) =>

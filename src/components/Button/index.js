@@ -8,6 +8,7 @@ import { StyledButton } from "./StyledButton";
 //Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const Button = (props) => {
   // Render an anchor tag (Link)
@@ -38,15 +39,16 @@ export const Button = (props) => {
     if (props.color === "github") {
       button = (
         <StyledButton color={props.color}>
-          <FontAwesomeIcon icon="fa-brands fa-github" /> Github
+          {" "}
+          <FontAwesomeIcon icon={faGithub} fixedWidth /> Github
         </StyledButton>
       );
     }
+    // If a website button
     if (props.color === "website") {
       button = (
         <StyledButton color={props.color}>
-          {" "}
-          <FontAwesomeIcon icon={faGlobe} /> Visit Site
+          <FontAwesomeIcon icon={faGlobe} fixedWidth /> Visit Site
         </StyledButton>
       );
     }

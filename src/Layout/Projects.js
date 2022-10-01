@@ -46,7 +46,7 @@ export const Projects = () => {
             </ButtonGithub>
           </ButtonBox>
         </ProjectInfo>
-        <ProjectPhoto>asdf</ProjectPhoto>
+        <ProjectPhoto>Coming Soon!</ProjectPhoto>
       </ProjectRow>
       <ProjectRow>
         <ProjectInfo>
@@ -110,7 +110,7 @@ export const Projects = () => {
             </ButtonGithub>
           </ButtonBox>
         </ProjectInfo>
-        <ProjectPhoto>TESSST</ProjectPhoto>
+        <ProjectPhoto>Coming Soon!</ProjectPhoto>
       </ProjectRow>
       <ProjectRow>
         <ProjectInfo>

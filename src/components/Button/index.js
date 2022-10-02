@@ -35,17 +35,17 @@ export const Button = (props) => {
     }
   }
   // If a github button
-  if (props.color) {
-    if (props.color === "github") {
+  if (props.type) {
+    if (props.type === "github") {
       button = (
         <StyledButton color={props.color}>
-          {" "}
           <FontAwesomeIcon icon={faGithub} fixedWidth /> Github
         </StyledButton>
       );
     }
+
     // If a website button
-    if (props.color === "website") {
+    if (props.type === "website") {
       button = (
         <StyledButton color={props.color}>
           <FontAwesomeIcon icon={faGlobe} fixedWidth /> Visit Site

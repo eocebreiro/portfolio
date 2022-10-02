@@ -16,26 +16,26 @@ export const buttonStyles = css`
   ${(props) =>
     props.color === "primary" &&
     css`
-      background: transparent;
-      color: ${handleColorType(props.color)};
-      border: 2px solid ${handleColorType(props.color)};
+      background: ${handleColorType("primary")};
+      color: white;
+      border: 2px solid ${handleColorType("primary")};
       &:hover {
         color: white;
-        background: ${handleColorType(props.color)};
-        border: 2px solid ${handleColorType(props.color)};
+        background: ${handleColorType("primary-hover")};
+        border: 2px solid ${handleColorType("primary-hover")};
       }
     `}
 
   ${(props) =>
-    props.color === "github" &&
+    props.color === "reverse" &&
     css`
-      color: black;
-      background: white;
-      border: 2px solid white;
+      color: ${handleColorType("primary")};
+      background: transparent;
+      border: 2px solid ${handleColorType("primary")};
       &:hover {
         color: white;
-        background: grey;
-        border: 2px solid grey;
+        background: ${handleColorType("primary")};
+        border: 2px solid ${handleColorType("primary")};
       }
     `}
 

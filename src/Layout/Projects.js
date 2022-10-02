@@ -68,12 +68,12 @@ export const Projects = () => {
           <ButtonBox>
             <ButtonWebsite>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <Button color="website" />
+                <Button color="primary" type="website" />
               </a>
             </ButtonWebsite>
             <ButtonGithub>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <Button color="github" />
+                <Button color="reverse" type="github" />
               </a>
             </ButtonGithub>
           </ButtonBox>
@@ -104,7 +104,7 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button color="website" />
+                <Button color="primary" type="website" />
               </a>
             </ButtonWebsite>
             <ButtonGithub>
@@ -113,7 +113,7 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button color="github" />
+                <Button color="reverse" type="github" />
               </a>
             </ButtonGithub>
           </ButtonBox>
@@ -143,7 +143,7 @@ export const Projects = () => {
           <ButtonBox>
             <ButtonWebsite>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <Button color="website" />
+                <Button color="primary" type="website" />
               </a>
             </ButtonWebsite>
             <ButtonGithub>
@@ -152,7 +152,7 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button color="github" />
+                <Button color="reverse" type="github" />
               </a>
             </ButtonGithub>
           </ButtonBox>
@@ -193,9 +193,7 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button color="primary">
-                  <FontAwesomeIcon icon={faGithub} fixedWidth /> Github
-                </Button>
+                <Button color="reverse" type="github" />
               </a>
             </ButtonGithub>
           </ButtonBox>
@@ -228,7 +226,7 @@ export const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button color="website" />
+                <Button color="primary" type="website" />
               </a>
             </ButtonWebsite>
           </ButtonBox>

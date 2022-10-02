@@ -3,6 +3,8 @@ export const handleColorType = (color) => {
   switch (color) {
     case "primary":
       return "#00b85b";
+    case "primary-hover":
+      return "#00763b";
 
     //Main Background
     case "dark":

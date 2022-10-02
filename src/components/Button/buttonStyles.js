@@ -16,19 +16,6 @@ export const buttonStyles = css`
   ${(props) =>
     props.color === "primary" &&
     css`
-      color: ${handleColorType("primary")};
-      background: transparent;
-      border: 2px solid ${handleColorType("primary")};
-      &:hover {
-        color: white;
-        background: ${handleColorType("primary")};
-        border: 2px solid ${handleColorType("primary")};
-      }
-    `}
-
-  ${(props) =>
-    props.color === "reverse" &&
-    css`
       background: ${handleColorType("primary")};
       color: white;
       border: 2px solid ${handleColorType("primary")};
@@ -36,6 +23,19 @@ export const buttonStyles = css`
         color: white;
         background: ${handleColorType("primary-hover")};
         border: 2px solid ${handleColorType("primary-hover")};
+      }
+    `}
+
+  ${(props) =>
+    props.color === "reverse" &&
+    css`
+      color: ${handleColorType("primary")};
+      background: transparent;
+      border: 2px solid ${handleColorType("primary")};
+      &:hover {
+        color: white;
+        background: ${handleColorType("primary")};
+        border: 2px solid ${handleColorType("primary")};
       }
     `}
 

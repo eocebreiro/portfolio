@@ -5,6 +5,8 @@ import { handleColorType } from "../utils/handleTypes";
 export const Box = styled.div`
   height: ${(props) => props.height};
   width: ${(props) => props.width};
+  padding-left: 5px;
+  padding-right: 5px;
 `;
 
 export const IconDiv = styled.div`

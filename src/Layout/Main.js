@@ -6,6 +6,10 @@ import { PTitle, Span } from "../components/P";
 import { Button } from "../components/Button";
 import { SlideRight, SlideLeft, SlideUp } from "../components/Animations";
 
+//Font Awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+
 export const Main = () => {
   return (
     <LandingSection id="main">
@@ -22,7 +26,7 @@ export const Main = () => {
       <Col>
         <SlideUp>
           <Button to="#about" color="primary">
-            Learn More
+            <FontAwesomeIcon icon={faAngleDown} fixedWidth /> Learn More
           </Button>
         </SlideUp>
       </Col>

@@ -20,6 +20,10 @@ import { Button } from "../components/Button";
 import { ProfileImg } from "../components/ProfileImg";
 import { FancyIcon } from "../components/Icon";
 
+//Font Awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 export const About = () => {
   return (
     <Section id="about">
@@ -44,12 +48,12 @@ export const About = () => {
             </PCenter>
             <ContactButton>
               <Button to="#contact" color="primary">
-                Contact
+                <FontAwesomeIcon icon={faEnvelope} fixedWidth /> Contact
               </Button>
             </ContactButton>
             <ResumeButton>
               <Button to="#contact" color="primary">
-                Download Resume
+                <FontAwesomeIcon icon={faDownload} fixedWidth /> Download Resume
               </Button>
             </ResumeButton>
           </ProfileLinks>

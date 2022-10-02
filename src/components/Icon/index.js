@@ -1,6 +1,8 @@
 import React from "react";
 
+import BootstrapIcon from "./svg/bootstrap";
 import CssIcon from "./svg/css";
+import ExpressIcon from "./svg/express";
 import FriebaseIcon from "./svg/firebase";
 import GitIcon from "./svg/git";
 import GithubIcon from "./svg/github";
@@ -15,6 +17,7 @@ import PythonIcon from "./svg/python";
 import ReactIcon from "./svg/react.js";
 import ReduxIcon from "./svg/redux";
 import SeleniumIcon from "./svg/selenium";
+import WordpressIcon from "./svg/wordpress";
 import NavGithubIcon from "./svg/navgithub";
 import NavLinkedinIcon from "./svg/navlinkedin";
 
@@ -33,8 +36,12 @@ const tidy = (string) => string.toLowerCase().trim();
 
 const getIcon = (name) => {
   switch (tidy(name)) {
+    case "bootstrap":
+      return <BootstrapIcon />;
     case "css":
       return <CssIcon />;
+    case "express":
+      return <ExpressIcon />;
     case "firebase":
       return <FriebaseIcon />;
     case "git":
@@ -63,6 +70,8 @@ const getIcon = (name) => {
       return <ReduxIcon />;
     case "selenium":
       return <SeleniumIcon />;
+    case "wordpress":
+      return <WordpressIcon />;
     case "navlinkedin":
       return <NavLinkedinIcon />;
     case "navgithub":
@@ -74,8 +83,12 @@ const getIcon = (name) => {
 };
 const getIconName = (name) => {
   switch (tidy(name)) {
+    case "bootstrap":
+      return "Bootstrap";
     case "css":
       return "CSS 3";
+    case "express":
+      return "Express";
     case "firebase":
       return "Firebase";
     case "git":
@@ -102,6 +115,8 @@ const getIconName = (name) => {
       return "Redux";
     case "selenium":
       return "Selenium";
+    case "wordpress":
+      return "Wordpress";
     default:
       return "";
   }

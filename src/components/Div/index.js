@@ -258,9 +258,9 @@ export const IconBox = styled.div`
 export const ProjectRow = styled.div`
   display: grid;
   grid-template-areas: "text image";
-  grid-auto-columns: minmax(auto, 300px) 1fr;
+  grid-auto-columns: 1fr 1fr;
   column-gap: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   @media ${device.tablet} {
     grid-template-areas: "text" "image";
     grid-auto-columns: 1fr 1fr;
@@ -271,6 +271,7 @@ export const ProjectInfo = styled.div`
   padding-bottom: 20px;
   @media ${device.tablet} {
     width: 100%;
+    padding-bottom: 40px;
   }
 `;
 
@@ -284,13 +285,14 @@ export const ProjectPhoto = styled.div`
 export const ButtonBox = styled.div`
   padding-top: 20px;
   display: grid;
-  column-gap: 10px;
+  column-gap: 20px;
   row-gap: 10px;
+  justify-content: left;
   grid-template-columns: auto auto;
   @media ${device.tablet} {
     grid-template-rows: none;
     grid-template-columns: auto auto;
-    column-gap: 20px;
+    justify-content: center;
   }
 `;
 export const ButtonItem = styled.div`
@@ -310,4 +312,13 @@ export const ButtonGithub = styled(ButtonItem)`
 
 export const Image = styled.div`
   display: block;
+`;
+
+export const MadeWith = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  @media ${device.tablet} {
+    justify-content: center;
+  }
 `;

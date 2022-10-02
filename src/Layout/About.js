@@ -83,26 +83,28 @@ export const About = () => {
             <br />
           </IconText>
           <IconColLeft>
-            <FancyIcon name="react"></FancyIcon>
-            <FancyIcon name="redux"></FancyIcon>
             <FancyIcon name="javascript"></FancyIcon>
-          </IconColLeft>
-          <IconColMiddle1>
             <FancyIcon name="html"></FancyIcon>
             <FancyIcon name="css"></FancyIcon>
+          </IconColLeft>
+          <IconColMiddle1>
+            <FancyIcon name="react"></FancyIcon>
             <FancyIcon name="node"></FancyIcon>
-            <FancyIcon name="git"></FancyIcon>
+            <FancyIcon name="redux"></FancyIcon>
+            <FancyIcon name="git"></FancyIcon>{" "}
+            <FancyIcon name="python"></FancyIcon>
           </IconColMiddle1>
           <IconColMiddle2>
+            <FancyIcon name="bootstrap"></FancyIcon>
+            <FancyIcon name="express"></FancyIcon>
+            <FancyIcon name="mongodb"></FancyIcon>{" "}
             <FancyIcon name="github"></FancyIcon>
-            <FancyIcon name="python"></FancyIcon>
-            <FancyIcon name="mongodb"></FancyIcon>
-            <FancyIcon name="heroku"></FancyIcon>
+            <FancyIcon name="selenium"></FancyIcon>
           </IconColMiddle2>
           <IconColRight>
             <FancyIcon name="googlecloud"></FancyIcon>
             <FancyIcon name="firebase"></FancyIcon>
-            <FancyIcon name="selenium"></FancyIcon>
+            <FancyIcon name="wordpress"></FancyIcon>
           </IconColRight>
         </IconContainer>
       </AboutContainer>

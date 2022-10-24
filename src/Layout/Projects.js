@@ -126,7 +126,7 @@ export const Projects = () => {
       </ProjectRow>
       <ProjectRow>
         <ProjectInfo>
-          <SubHeading>My Game Tracker</SubHeading>
+          <SubHeading>My Game Library</SubHeading>
           <MadeWith>
             <Icon name="react" height={height} width={width} />
             <Icon name="javascript" height={height} width={width} />
@@ -135,10 +135,14 @@ export const Projects = () => {
             <Icon name="express" height={height} width={width} />
           </MadeWith>
           <P>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.{" "}
+            My Game Library is an app that helps you keep track of the your
+            backlog, wishlist and the games you have played. The backend was
+            built using <PrimaryColor>Express</PrimaryColor> and following
+            common <PrimaryColor>REST API</PrimaryColor> standards and{" "}
+            <PrimaryColor>CRUD</PrimaryColor> functions. The front end was built
+            using <PrimaryColor>React</PrimaryColor>,{" "}
+            <PrimaryColor>Bootstrap</PrimaryColor> and{" "}
+            <PrimaryColor>Context API</PrimaryColor>.
           </P>
           <ButtonBox>
             <ButtonWebsite>
@@ -148,7 +152,7 @@ export const Projects = () => {
             </ButtonWebsite>
             <ButtonGithub>
               <a
-                href="https://github.com/eocebreiro/my-gaming-tracker"
+                href="https://github.com/eocebreiro/my-game-library"
                 target="_blank"
                 rel="noopener noreferrer"
               >

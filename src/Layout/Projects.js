@@ -47,7 +47,7 @@ export const Projects = () => {
             <Icon name="heroku" height={height} width={width} />
           </MadeWith>
           <P>
-            My most current and on going project is a fantasy draft website for
+            My most current and on-going project is a fantasy draft website for
             Major League Soccer (MLS). Users will be able to play with their
             friends and take turns drafting players to be on their fantasy team.
             Each week those players will earn points depending on how they do in
@@ -55,14 +55,14 @@ export const Projects = () => {
           </P>
           <br />
           <P>
-            This project is built with <PrimaryColor>react</PrimaryColor> using{" "}
-            <PrimaryColor>redux</PrimaryColor> in order to manage the state. The
-            backend uses <PrimaryColor>NodeJS</PrimaryColor> and{" "}
+            This project is being built with <PrimaryColor>React</PrimaryColor>{" "}
+            using <PrimaryColor>Redux</PrimaryColor> in order to manage the
+            state. The backend uses <PrimaryColor>NodeJS</PrimaryColor> and{" "}
             <PrimaryColor>Express</PrimaryColor> for authentication, validation,
             and interacting with <PrimaryColor>MongoDB</PrimaryColor>. The
-            application uses a Sports API to get its data and uses{" "}
-            <PrimaryColor>firebase functions</PrimaryColor> and{" "}
-            <PrimaryColor>Google Cloud Scheduler</PrimaryColor> to time when
+            application uses a Sports <PrimaryColor>API</PrimaryColor> to get
+            its data and uses <PrimaryColor>Firebase Functions</PrimaryColor>{" "}
+            and <PrimaryColor>Google Cloud Scheduler</PrimaryColor> to time when
             this happens since the data constantly changes depending when the
             matches occur.
           </P>
@@ -83,6 +83,57 @@ export const Projects = () => {
       </ProjectRow>
       <ProjectRow>
         <ProjectInfo>
+          <SubHeading>My Game Library</SubHeading>
+          <MadeWith>
+            <Icon name="react" height={height} width={width} />
+            <Icon name="javascript" height={height} width={width} />
+            <Icon name="bootstrap" height={height} width={width} />
+            <Icon name="mongodb" height={height} width={width} />
+            <Icon name="express" height={height} width={width} />
+          </MadeWith>
+          <P>
+            My Game Library is an app that helps you keep track of the your
+            backlog, wishlist and the games you have played. The backend was
+            built using <PrimaryColor>Express</PrimaryColor> and following
+            common <PrimaryColor>REST API</PrimaryColor> standards and{" "}
+            <PrimaryColor>CRUD</PrimaryColor> functions. The front end was built
+            using <PrimaryColor>React</PrimaryColor>,{" "}
+            <PrimaryColor>Bootstrap</PrimaryColor> and{" "}
+            <PrimaryColor>Context API</PrimaryColor>.{" "}
+          </P>
+          <br />
+          <span>Try out the demo account:</span>
+          <li>Email: guest@gmail.com</li>
+          <li>Password: password</li>
+          <ButtonBox>
+            <ButtonWebsite>
+              <a
+                href="https://eocebreiro.github.io/my-game-library/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button color="primary" type="website" />
+              </a>
+            </ButtonWebsite>
+            <ButtonGithub>
+              <a
+                href="https://github.com/eocebreiro/my-game-library"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button color="reverse" type="github" />
+              </a>
+            </ButtonGithub>
+          </ButtonBox>
+        </ProjectInfo>
+        <ProjectPhoto>
+          <Image>
+            <Img src={mygamelibrary} />
+          </Image>
+        </ProjectPhoto>
+      </ProjectRow>
+      <ProjectRow>
+        <ProjectInfo>
           <SubHeading>Pokedex</SubHeading>
           <MadeWith>
             <Icon name="react" height={height} width={width} />
@@ -95,8 +146,8 @@ export const Projects = () => {
             user can search either by name or number and select on a specific
             pokemon to get more details. The web app was built with{" "}
             <PrimaryColor>react</PrimaryColor> and{" "}
-            <PrimaryColor>bootstrap</PrimaryColor> and utilized the PokeApi.co
-            API for its data.{" "}
+            <PrimaryColor>bootstrap</PrimaryColor> and utilized the PokeApi.co{" "}
+            <PrimaryColor>API</PrimaryColor> for its data.{" "}
           </P>
           <ButtonBox>
             <ButtonWebsite>
@@ -125,49 +176,7 @@ export const Projects = () => {
           </Image>
         </ProjectPhoto>
       </ProjectRow>
-      <ProjectRow>
-        <ProjectInfo>
-          <SubHeading>My Game Library</SubHeading>
-          <MadeWith>
-            <Icon name="react" height={height} width={width} />
-            <Icon name="javascript" height={height} width={width} />
-            <Icon name="bootstrap" height={height} width={width} />
-            <Icon name="mongodb" height={height} width={width} />
-            <Icon name="express" height={height} width={width} />
-          </MadeWith>
-          <P>
-            My Game Library is an app that helps you keep track of the your
-            backlog, wishlist and the games you have played. The backend was
-            built using <PrimaryColor>Express</PrimaryColor> and following
-            common <PrimaryColor>REST API</PrimaryColor> standards and{" "}
-            <PrimaryColor>CRUD</PrimaryColor> functions. The front end was built
-            using <PrimaryColor>React</PrimaryColor>,{" "}
-            <PrimaryColor>Bootstrap</PrimaryColor> and{" "}
-            <PrimaryColor>Context API</PrimaryColor>.
-          </P>
-          <ButtonBox>
-            <ButtonWebsite>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <Button color="primary" type="website" />
-              </a>
-            </ButtonWebsite>
-            <ButtonGithub>
-              <a
-                href="https://github.com/eocebreiro/my-game-library"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button color="reverse" type="github" />
-              </a>
-            </ButtonGithub>
-          </ButtonBox>
-        </ProjectInfo>
-        <ProjectPhoto>
-          <Image>
-            <Img src={mygamelibrary} />
-          </Image>
-        </ProjectPhoto>
-      </ProjectRow>
+
       <ProjectRow>
         <ProjectInfo>
           <SubHeading>Personal Portfolio</SubHeading>

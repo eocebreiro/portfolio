@@ -19,6 +19,7 @@ import { Icon } from "../components/Icon";
 import pokedexImg from "../img/pokedex.png";
 import katrinacebreiroImg from "../img/katrinacebreiro.png";
 import ericcImg from "../img/ericc.png";
+import mygamelibrary from "../img/mygamelibrary.png";
 
 //Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -161,7 +162,11 @@ export const Projects = () => {
             </ButtonGithub>
           </ButtonBox>
         </ProjectInfo>
-        <ProjectPhoto>Coming Soon!</ProjectPhoto>
+        <ProjectPhoto>
+          <Image>
+            <Img src={mygamelibrary} />
+          </Image>
+        </ProjectPhoto>
       </ProjectRow>
       <ProjectRow>
         <ProjectInfo>

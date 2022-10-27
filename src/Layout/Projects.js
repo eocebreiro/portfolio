@@ -16,10 +16,11 @@ import { Img } from "../components/Img";
 import { Icon } from "../components/Icon";
 
 // Project Images
+import draftwebsite from "../img/draftwebsite.png";
+import mygamelibrary from "../img/mygamelibrary.png";
 import pokedexImg from "../img/pokedex.png";
 import katrinacebreiroImg from "../img/katrinacebreiro.png";
 import ericcImg from "../img/ericc.png";
-import mygamelibrary from "../img/mygamelibrary.png";
 
 //Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -66,20 +67,28 @@ export const Projects = () => {
             this happens since the data constantly changes depending when the
             matches occur.
           </P>
+          <br />
+          <P>
+            Since MLS is in its offseason, the website is being updated with new
+            features for next season.
+          </P>
           <ButtonBox>
-            <ButtonWebsite>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <Button color="primary" type="website" />
-              </a>
-            </ButtonWebsite>
             <ButtonGithub>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/eocebreiro/draftleague_client"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button color="reverse" type="github" />
               </a>
             </ButtonGithub>
           </ButtonBox>
         </ProjectInfo>
-        <ProjectPhoto>Coming Soon!</ProjectPhoto>
+        <ProjectPhoto>
+          <Image>
+            <Img src={draftwebsite} />
+          </Image>
+        </ProjectPhoto>
       </ProjectRow>
       <ProjectRow>
         <ProjectInfo>

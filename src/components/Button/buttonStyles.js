@@ -13,6 +13,7 @@ export const buttonStyles = css`
   letter-spacing: 2px;
   text-decoration: transparent;
   background: none;
+  text-align: center;
   ${(props) =>
     props.color === "primary" &&
     css`

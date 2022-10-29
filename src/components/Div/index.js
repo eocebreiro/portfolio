@@ -322,3 +322,11 @@ export const MadeWith = styled.div`
     justify-content: center;
   }
 `;
+
+export const MainPageButtonBox = styled(ButtonBox)`
+  @media ${device.tablet} {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+`;

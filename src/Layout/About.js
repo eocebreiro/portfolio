@@ -60,7 +60,7 @@ export const About = () => {
                 to={resume}
                 target="_blank"
                 rel="noreferrer"
-                color="primary"
+                color="reverse"
               >
                 <FontAwesomeIcon icon={faDownload} fixedWidth /> Download Resume
               </Button>

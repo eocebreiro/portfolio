@@ -1,14 +1,17 @@
 import React from "react";
 
 // Components
-import { LandingSection, Col } from "../components/Div";
+import { LandingSection, Col, MainPageButtonBox } from "../components/Div";
 import { PTitle, Span } from "../components/P";
 import { Button } from "../components/Button";
 import { SlideRight, SlideLeft, SlideUp } from "../components/Animations";
 
 //Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faDownload } from "@fortawesome/free-solid-svg-icons";
+
+// Resume
+import resume from "../documents/resume.pdf";
 
 export const Main = () => {
   return (
@@ -25,9 +28,21 @@ export const Main = () => {
       </SlideLeft>
       <Col>
         <SlideUp>
-          <Button to="#about" color="primary">
-            <FontAwesomeIcon icon={faAngleDown} fixedWidth /> Learn More
-          </Button>
+          <MainPageButtonBox>
+            {" "}
+            <Button to="#about" color="primary">
+              <FontAwesomeIcon icon={faAngleDown} fixedWidth /> Learn More
+            </Button>
+            <Button
+              type="pdf"
+              to={resume}
+              target="_blank"
+              rel="noreferrer"
+              color="reverse"
+            >
+              <FontAwesomeIcon icon={faDownload} fixedWidth /> Download Resume
+            </Button>
+          </MainPageButtonBox>
         </SlideUp>
       </Col>
     </LandingSection>

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.2596b3e8.js",
+    "main.js": "/static/js/main.482db5f5.js",
     "static/media/katrinacebreiro.png": "/static/media/katrinacebreiro.30788224af04f165457c.png",
     "static/media/pokedex.png": "/static/media/pokedex.7088fe3425596ce39862.png",
     "static/media/mygamelibrary.png": "/static/media/mygamelibrary.676068e1f8ad8c7b1ec3.png",
@@ -9,9 +9,9 @@
     "static/media/resume.pdf": "/static/media/resume.bda6383f305ea5a1d9e8.pdf",
     "static/media/about-photo.jpg": "/static/media/about-photo.f602ee980b8580b5f4e4.jpg",
     "index.html": "/index.html",
-    "main.2596b3e8.js.map": "/static/js/main.2596b3e8.js.map"
+    "main.482db5f5.js.map": "/static/js/main.482db5f5.js.map"
   },
   "entrypoints": [
-    "static/js/main.2596b3e8.js"
+    "static/js/main.482db5f5.js"
   ]
 }

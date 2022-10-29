@@ -1,5 +1,4 @@
 import React, { Children, Fragment } from "react";
-import PropTypes from "prop-types";
 
 import { StyledLink } from "./StyledLink";
 import { StyledHashLink } from "./StyledLink";
@@ -34,8 +33,23 @@ export const Button = (props) => {
       );
     }
   }
-  // If a github button
+
   if (props.type) {
+    // PDF Button
+    if (props.type === "pdf") {
+      button = (
+        <StyledLink
+          to={props.to}
+          target={props.target}
+          rel={props.rel}
+          color={props.color}
+        >
+          {Children.toArray(props.children)}
+        </StyledLink>
+      );
+    }
+
+    // If a github button
     if (props.type === "github") {
       button = (
         <StyledButton color={props.color}>
@@ -69,11 +83,4 @@ export const Button = (props) => {
   }
 
   return <Fragment>{button}</Fragment>;
-};
-
-Button.propTypes = {
-  handleRoute: PropTypes.func,
-  to: PropTypes.string,
-  onClick: PropTypes.func,
-  children: PropTypes.node.isRequired,
 };

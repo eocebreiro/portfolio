@@ -25,7 +25,6 @@ import ericcImg from "../img/ericc.png";
 //Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const Projects = () => {
   let height = "35px";
@@ -101,10 +100,10 @@ export const Projects = () => {
             <Icon name="express" height={height} width={width} />
           </MadeWith>
           <P>
-            My Game Library is an app that helps you keep track of the your
-            backlog, wishlist and the games you have played. The backend was
-            built using <PrimaryColor>Express</PrimaryColor> and following
-            common <PrimaryColor>REST API</PrimaryColor> standards and{" "}
+            My Game Library is an app that helps you keep track of your backlog,
+            wishlist and the games you have played. The backend was built using{" "}
+            <PrimaryColor>Express</PrimaryColor> and following common{" "}
+            <PrimaryColor>REST API</PrimaryColor> standards and{" "}
             <PrimaryColor>CRUD</PrimaryColor> functions. The front end was built
             using <PrimaryColor>React</PrimaryColor>,{" "}
             <PrimaryColor>Bootstrap</PrimaryColor> and{" "}
@@ -151,9 +150,9 @@ export const Projects = () => {
             <Icon name="css" height={height} width={width} />
           </MadeWith>
           <P>
-            Pokedex uses an API to get data for all the current pokemon. The
+            Pokedex uses an API to get data for all the current Pokemon. The
             user can search either by name or number and select on a specific
-            pokemon to get more details. The web app was built with{" "}
+            Pokemon to get more details. The web app was built with{" "}
             <PrimaryColor>react</PrimaryColor> and{" "}
             <PrimaryColor>bootstrap</PrimaryColor> and utilized the PokeApi.co{" "}
             <PrimaryColor>API</PrimaryColor> for its data.{" "}
@@ -189,12 +188,10 @@ export const Projects = () => {
       <ProjectRow>
         <ProjectInfo>
           <SubHeading>Personal Portfolio</SubHeading>
-          <P>
-            <MadeWith>
-              <Icon name="react" height={height} width={width} />
-              <Icon name="javascript" height={height} width={width} />
-            </MadeWith>
-          </P>
+          <MadeWith>
+            <Icon name="react" height={height} width={width} />
+            <Icon name="javascript" height={height} width={width} />
+          </MadeWith>
           <P>
             A single page completely responsive web portfolio to showcase
             projects, skills, and many more information. Built with
@@ -240,11 +237,11 @@ export const Projects = () => {
             <Icon name="css" height={height} width={width} />
           </MadeWith>
           <P>
-            A website made from <PrimaryColor>wordpress</PrimaryColor> to
+            A website made from <PrimaryColor>WordPress</PrimaryColor> to
             display the client's independent films. While a template was used,{" "}
             <PrimaryColor>CSS</PrimaryColor> and{" "}
             <PrimaryColor>HTML</PrimaryColor> were needed to personalize the
-            site according to the clients needs.
+            site according to the client's needs.
           </P>
           <ButtonBox>
             <ButtonWebsite>

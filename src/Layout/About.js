@@ -24,6 +24,9 @@ import { FancyIcon } from "../components/Icon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
+// Resume
+import resume from "../documents/resume.pdf";
+
 export const About = () => {
   return (
     <Section id="about">
@@ -52,7 +55,13 @@ export const About = () => {
               </Button>
             </ContactButton>
             <ResumeButton>
-              <Button to="#contact" color="primary">
+              <Button
+                type="pdf"
+                to={resume}
+                target="_blank"
+                rel="noreferrer"
+                color="primary"
+              >
                 <FontAwesomeIcon icon={faDownload} fixedWidth /> Download Resume
               </Button>
             </ResumeButton>

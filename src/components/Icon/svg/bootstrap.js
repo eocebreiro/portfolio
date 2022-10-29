@@ -12,8 +12,8 @@ const Icon = () => (
         gradientTransform="translate(1.11 14.613) scale(.24566)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#9013fe" offset="0"></stop>
-        <stop stop-color="#6610f2" offset="1"></stop>
+        <stop stopColor="#9013fe" offset="0"></stop>
+        <stop stopColor="#6610f2" offset="1"></stop>
       </linearGradient>
       <linearGradient
         id="bootstrap-original-b"
@@ -24,8 +24,8 @@ const Icon = () => (
         gradientTransform="translate(0 52)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#fff" offset="0"></stop>
-        <stop stop-color="#f1e5fc" offset="1"></stop>
+        <stop stopColor="#fff" offset="0"></stop>
+        <stop stopColor="#f1e5fc" offset="1"></stop>
       </linearGradient>
       <filter
         id="bootstrap-original-c"
@@ -33,10 +33,10 @@ const Icon = () => (
         y="135.46"
         width="197"
         height="249"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
         filterUnits="userSpaceOnUse"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
         <feColorMatrix
           in="SourceAlpha"
           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"

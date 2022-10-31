@@ -1,4 +1,4 @@
-import photo from "../../img/about-photo.jpg";
+import photo from "../../img/about-photo.jpeg";
 import { StyledImg } from "./styledImg";
 
 export const ProfileImg = () => {
